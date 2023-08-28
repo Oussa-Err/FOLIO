@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Portfolio = () => {
   return (
-    <section className="min-h-screen" id="portfolio">
+    <section className="min-h-screen  grid col-span-1 justify-center items-center" id="portfolio">
       <h1>Portfolio</h1>
       <div>
         <div>
