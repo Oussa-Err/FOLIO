@@ -2,15 +2,20 @@ import React from "react";
 
 export const About = () => {
   return (
-    <section className="min-h-screen  grid col-span-1 justify-center items-center" id="about">
-      <h1>About</h1>
-      <p>My name is Caio Augusto, I’m from Brazil and I’m 19 years old.</p>
+    <section
+      className="min-h-screen gap-4 sm:gap-0 pt-24  grid col-span-1 justify-center items-center"
+      id="about"
+    >
+      <h1 className="text-[2rem] sm:text-[3rem] lg:text-[5rem] font-bold">
+        About
+      </h1>
+      <p>My name is Oussama, I’m from Morocco and I’m 22 years old.</p>
       <p>
         I describe myself as a passionate developer who loves coding, open
-        source, and the web platform.{" "}
+        source, and the web platform.
       </p>
       <p>
-        Aside from my job, I like to create and contribute to open source
+        Aside from my Freelance, I like to create and contribute to open source
         projects. That helps me to learn a ton of new stuff, grow as a developer
         and support other open source projects.
       </p>
@@ -19,7 +24,7 @@ export const About = () => {
         used a computer.
       </p>
       <p>
-        I started as a Front-end Developer on 3/8/2020. Since then I have been
+        I started as a Front-end Developer on 3/8/2022. Since then I have been
         dedicating about 12 hours a day to studies.
       </p>
       <p>
@@ -38,8 +43,10 @@ export const About = () => {
         series.
       </p>
       <p>
-        I work as Fullstack developer using techs like React.js, Go, TypeScript,
-        GraphQL and more.
+        I am actively exploring new avenues within the tech industry and am
+        eagerly open to fresh opportunities. I specialize in crafting dynamic
+        web experiences using an array of cutting-edge technologies including
+        React.js, Python, Node.js, and GraphQL, among others.
       </p>
     </section>
   );
