@@ -7,21 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       animation: {
-        'button-rotate': 'button-rotate 2s ease-in-out infinite',
+        'fade-slide-down': 'fade-slide-down ease-out 1s',
+        'shakeHands': 'shakeHands 2s infinite'
       },
       keyframes: {
-        'button-rotate': {
-          '0%': { transform: 'scale(1) rotate(0deg)' },
-          '50%': { transform: 'scale(1.5) rotate(180deg)' },
-          '100%': { transform: 'scale(1) rotate(360deg)' },
+        'fade-slide-down': {
+          '0%': { opacity: 0, transform: 'translateY(-4rem)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' }
         },
-      }
+        'shakeHands': {
+          ' 0%': { transform: 'rotate(0.0deg)' },
+          '10%': { transform: 'rotate(14.0deg)' },
+          '20%': { transform: 'rotate(-8.0deg) ' },
+          '30%': { transform: 'rotate(14.0deg)' },
+          '40%': { transform: 'rotate(-4.0deg)' },
+          '50%': { transform: 'rotate(10.0deg)' },
+          '60%': { transform: 'rotate(0.0deg)' },
+          '100%': { transform: 'rotate(0.0deg)' }
+        },
+      },
     },
   },
   plugins: [],

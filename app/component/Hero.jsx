@@ -1,20 +1,33 @@
+import Image from "next/image";
 import React from "react";
 
 export const Hero = () => {
   return (
     <section
-      className="min-h-screen flex gap-4 flex-col justify-center items-start"
+      className="min-h-screen flex gap-4 flex-col justify-center items-start animate-fade-slide-down pt-16 sm:pt-0"
       id="Hero"
     >
-      <h4 className="text-[1rem] md:text-[3rem] font-semibold animate-button-rotate ">Hello! </h4>
-      <h1 className="text-[2rem] md:text-[3rem] lg:text-[3.5rem] font-bold">I am Oussama <span className="text-orange-400">Err</span>aoui.</h1>
-      <h1 className="text-[2rem] md:text-[3rem] lg:text-[3.5rem] font-bold">I create things for the web.</h1>
-      <h2>
-        Fullstack developer <em className="line-through">and designer</em> based in Morocco. I always try to write
-        clean code and I value performance.
-      </h2>
-      <div>
-        <a href="#portfolio">Portfolio</a>
+      <div className="flex flex-col m-auto items-start justify-center">
+        <div className="flex gap-3">
+          <h4 className="text-[2rem] md:text-[2.2rem] animate-">
+            Hello!
+          </h4>
+          <Image src={"/assets/hands.svg"} className='animate-shakeHands -z-10' width={32} height={32} />
+        </div>
+        <h1 className="text-[3rem] md:text-[4rem] lg:text-[4.8rem] font-bold">
+          I am Oussama <span className="text-orange-400">Err</span>aoui.
+        </h1>
+        <h1 className="text-[3rem] md:text-[4rem] lg:text-[4.8rem] font-bold">
+          I create things for the web.
+        </h1>
+        <h4 className="text-xl py-8">
+          Fullstack developer&nbsp;<em className="line-through">and designer</em>
+          &nbsp;based in Morocco. <br/>I always try to write clean code and I value
+          performance.
+        </h4>
+        <div className="py-[12px] px-[40px] md:mt-8 rounded-md bg-sky-600">
+          <a href="#portfolio">Portfolio</a>
+        </div>
       </div>
     </section>
   );
