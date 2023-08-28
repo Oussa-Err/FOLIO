@@ -7,14 +7,17 @@ export const Achievement = () => {
         className="min-h-screen  grid col-span-1 justify-center items-center"
         id="portfolio"
       >
-        <h1 className="text-[2rem] sm:text-[3rem] lg:text-[5rem] font-bold">Achievements</h1>
+        <h1 className="text-[2rem] sm:text-[3rem] lg:text-[5rem] font-bold">
+          Achievements
+        </h1>
         <div className="flex">
           <div className="flex-1">
             <h3>Certificate XX </h3>
             <p>
-              This project consists of an application for tracking orders. Just
-              enter the tracking code, and if valid, the information is returned
-              in detail. The data comes through an API. Developed with React.js.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+              ducimus in? Reprehenderit, numquam mollitia hic beatae nam quam,
+              facilis velit accusamus quos consequuntur quasi eligendi
+              perferendis atque minus reiciendis voluptate.
             </p>
             <div className="w-full flex justify-between">
               <a href="">Visit</a>

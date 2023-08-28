@@ -11,7 +11,7 @@ export const Portfolio = () => {
         Portfolio
       </h1>
       <div className="grid col-span-1 justify-center items-center gap-14">
-        <div className="flex flex-col-reverse lg:flex-row gap-8 w-full">
+        <div className="flex flex-col-reverse lg:flex-row gap-4 w-full">
           <div className="flex-1 flex justify-center flex-col gap-8">
             <h3 className="font-mono text-3xl text-center lg:text-left">
               Healthy Farm
@@ -22,10 +22,10 @@ export const Portfolio = () => {
               in detail. The data comes through an API. Developed with React.js.
             </p>
             <div className="w-full flex justify-between">
-              <a href="" className="text-2xl">
-                Visit <span className="text-4xl font-extrabold">&rarr;</span>
+              <a href="" className="text-lg">
+                Visit <span className="text-xl font-extrabold">&rarr;</span>
               </a>
-              <a href="" className="text-2xl">
+              <a href="" className="text-lg">
                 Source
               </a>
             </div>
@@ -38,7 +38,7 @@ export const Portfolio = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row gap-8 w-full">
+        <div className="flex flex-col-reverse lg:flex-row gap-4 w-full">
           <div className="flex-1 flex justify-center flex-col gap-8">
             <h3 className="font-mono text-3xl text-center lg:text-left">
               GPT3
@@ -49,10 +49,10 @@ export const Portfolio = () => {
               in detail. The data comes through an API. Developed with React.js.
             </p>
             <div className="w-full flex justify-between">
-              <a href="" className="text-2xl">
-                Visit <span className="text-4xl font-extrabold">&rarr;</span>
+              <a href="" className="text-lg">
+                Visit <span className="text-xl font-extrabold">&rarr;</span>
               </a>
-              <a href="" className="text-2xl">
+              <a href="" className="text-lg">
                 Source
               </a>
             </div>
@@ -61,7 +61,7 @@ export const Portfolio = () => {
             <Image src="/assets/gpt3Project.png" width={700} height={300} />
           </div>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row gap-8 w-full">
+        <div className="flex flex-col-reverse lg:flex-row gap-4 w-full">
           <div className="flex-1 flex justify-center flex-col gap-8">
             <h3 className="font-mono text-3xl text-center lg:text-left">
               Play play
@@ -72,10 +72,10 @@ export const Portfolio = () => {
               in detail. The data comes through an API. Developed with React.js.
             </p>
             <div className="w-full flex justify-between">
-              <a href="" className="text-2xl">
-                Visit <span className="text-4xl font-extrabold">&rarr;</span>
+              <a href="" className="text-lg">
+                Visit <span className="text-xl font-extrabold">&rarr;</span>
               </a>
-              <a href="" className="text-2xl">
+              <a href="" className="text-lg">
                 Source
               </a>
             </div>

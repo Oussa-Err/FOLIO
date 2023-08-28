@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedSections from './AnimatedSections'
 
 export const Contact = () => {
   return (
@@ -6,6 +7,7 @@ export const Contact = () => {
       className="min-h-screen gap-8  flex flex-col justify-center items-center animate-fade-slide-down"
       id="contact"
     >
+            <AnimatedSections />
       <h1 className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-bold">
         Contact
       </h1>
