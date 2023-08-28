@@ -8,16 +8,16 @@ export const Hero = () => {
       id="Hero"
     >
       <div className="flex flex-col m-auto items-start justify-center">
-        <div className="flex gap-3">
+        <div className="flex gap-2">
           <h4 className="text-[2rem] md:text-[2.2rem] animate-">
             Hello!
           </h4>
           <Image src={"/assets/hands.svg"} className='animate-shakeHands -z-10' width={32} height={32} />
         </div>
-        <h1 className="text-[3rem] md:text-[4rem] lg:text-[4.8rem] font-bold">
+        <h1 className="text-[2rem] md:text-[3rem] lg:text-[4.8rem] font-bold">
           I am Oussama <span className="text-orange-400">Err</span>aoui.
         </h1>
-        <h1 className="text-[3rem] md:text-[4rem] lg:text-[4.8rem] font-bold">
+        <h1 className="text-[2rem] md:text-[3rem] lg:text-[4.8rem] font-bold">
           I create things for the web.
         </h1>
         <h4 className="text-xl py-8">

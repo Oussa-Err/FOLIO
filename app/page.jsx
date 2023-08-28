@@ -6,7 +6,7 @@ import { Portfolio } from './component/Portfolio'
 
 export default function Home() {
   return (
-    <main className="w-screen px-8 md:px-24">
+    <main className="w-screen  px-8 md:px-24">
       <Header />
       <Hero />
       <About />

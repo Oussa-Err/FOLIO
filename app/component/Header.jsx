@@ -16,9 +16,9 @@ export const Header = () => {
               Err.
             </h1>
           </Link>
-          <ul className="hidden text-xl md:flex items-center gap-8 animate-fade-slide-down">
+          <ul className="hidden text-lg md:flex items-center gap-8 animate-fade-slide-down">
             <li>
-              <a href="#about"> About</a>
+              <a href="#about">About</a>
             </li>
             <li>
               <a href="#portfolio">Portfolio</a>
@@ -47,7 +47,7 @@ export const Header = () => {
               />
             )}
             {toggleMenu && (
-              <ul className="absolute inset-0 z-40 h-screen backdrop-blur-xl flex flex-col text-2xl items-center justify-center gap-8 animate-fade-slide-down">
+              <ul className="absolute inset-0 z-40 h-screen backdrop-blur-xl flex flex-col text-2xl items-center justify-center gap-8 animate-fade-slide-down"  onClick={() => setToggle(!toggleMenu)}>
                 <li>
                   <a href="#about"> About</a>
                 </li>

@@ -14,7 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <div>{children}</div>
+
+        <div className="pt-14 sm:pt-24">{children}</div>
         <Footer />
       </body>
     </html>
