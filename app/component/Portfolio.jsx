@@ -37,7 +37,7 @@ export const Portfolio = () => {
           </div>
           <div className="flex-1">
             <Image
-              src="/assets/healthyfarmProject.png"
+              src="/assets/tsf-project-screenshot.png"
               width={700}
               height={300}
             />
