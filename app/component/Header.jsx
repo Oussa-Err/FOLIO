@@ -28,18 +28,18 @@ export const Header = () => {
               Err.
             </h1>
           </Link>
-          <ul className="hidden text-lg md:flex items-center gap-8 ">
+          <ul className="hidden text-xl md:flex items-center gap-8  ">
             <li className="animate-navLinks">
-              <a href="#about" className="scroll-smooth transition-all duration-500 ease-in-out">About</a>
+              <a href="#about" className="transition-all duration-500 ease-in-out hover:text-sky-400">About</a>
             </li>
             <li className="animate-navLinks-A">
-              <a href="#portfolio">Portfolio</a>
+              <a href="#portfolio" className="transition-all duration-500 ease-in-out hover:text-sky-400">Portfolio</a>
             </li>
             <li className="animate-navLinks-B">
-              <a href="#blog">Blog</a>
+              <a href="#blog" className="transition-all duration-500 ease-in-out hover:text-sky-400">Blog</a>
             </li>
             <li className="animate-navLinks-C">
-              <a href="#contact">Contact</a>
+              <a href="#contact" className="transition-all duration-500 ease-in-out hover:text-sky-400">Contact</a>
             </li>
           </ul>
           <div className="flex items-center md:hidden">

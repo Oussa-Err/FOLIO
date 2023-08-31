@@ -22,3 +22,11 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: #0e1012
 }
+
+::-moz-selection {
+  background: rgb(46, 46, 1);
+}
+
+::selection {
+  background: rgb(46, 46, 1);
+}
