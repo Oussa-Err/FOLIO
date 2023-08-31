@@ -21,7 +21,7 @@ export const Header = () => {
 
   return (
     <div>
-      <header className="backdrop-blur-lg top-0 drop-shadow-lg inset-x-0 fixed">
+      <header className="backdrop-blur-lg z-40 top-0 drop-shadow-lg inset-x-0 fixed">
         <nav className="flex justify-between pt-2 sm:pt-1 pb-1 px-12 md:px-20">
           <Link href={"/"}>
             <h1 className="text-orange-400 relative z-50 font-serif text-[2rem] md:text-[3rem]">

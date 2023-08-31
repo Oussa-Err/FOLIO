@@ -7,7 +7,7 @@ export const About = () => {
       id="about"
     >
       <div className="flex flex-col gap-4 lg:max-w-5xl sm:gap-8">
-        <h1 className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-bold">
+        <h1 className="text-[3rem] block relative pb-4 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-2/5 after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide">
           Know Who I'M
         </h1>
         <p className="md:text-xl">
@@ -27,8 +27,8 @@ export const About = () => {
           first used a computer.
         </p>
         <p className="md:text-lg">
-          I started as a Front-end Developer on 3/01/2023. Since then I have been
-          dedicating about 12 hours a day to studies.
+          I started as a Front-end Developer on 3/01/2023. Since then I have
+          been dedicating about 12 hours a day to studies.
         </p>
         <p className="md:text-lg">
           I have a huge passion for helping people who are just starting. Codes,
@@ -49,7 +49,8 @@ export const About = () => {
           I am actively exploring new avenues within the tech industry and am
           eagerly open to fresh opportunities. I specialize in crafting dynamic
           web experiences using an array of cutting-edge technologies including
-          Node.js, GraphQL and Modern Javascript Library and Frameworks like React.js and Next.js
+          Node.js, GraphQL and Modern Javascript Library and Frameworks like
+          React.js and Next.js
         </p>
       </div>
     </section>

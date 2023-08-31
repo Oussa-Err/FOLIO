@@ -30,3 +30,7 @@ body {
 ::selection {
   background: rgb(46, 46, 1);
 }
+
+.hover-animate-navLinks-toggle {
+  animation: navLinks-toggle-C 1s ease 1s;
+}

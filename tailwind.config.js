@@ -19,6 +19,7 @@ module.exports = {
         'navLinks-toggle-A': 'navLinks-toggle-A ease-in-out 0.8s ',
         'navLinks-toggle-B': 'navLinks-toggle-B ease-in-out 1.2s ',
         'navLinks-toggle-C': 'navLinks-toggle-C ease-in-out 1.4s ',
+        'blue-block-slide': 'blue-block-slide ease-in-out 1.4'
       },
       colors: {
         'bg-toggle-color': '#0E1012'
@@ -74,6 +75,10 @@ module.exports = {
           '0%': { opacity: 0, transform: 'translateX(-5rem)' },
           '100%': { opacity: 1, transform: 'translateX(0)' }
         },
+        'blue-block-slide': {
+          '0%': { opacity: 0, transform: 'translateX(-5rem)' },
+          '100%': { opacity: 1, transform: 'translateX(0)' }
+        }
       },
     },
   },
