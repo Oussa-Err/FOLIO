@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Portfolio = () => {
   return (
     <section className="min-h-screen  gap-4 pt-28  " id="portfolio">
-      <h1 className="text-[3rem] inline-block relative pb-4 sm:text-[4rem] lg:text-[5rem] font-bold transition-all ease-in-out duration-300 hover-animate-navLinks-toggle before:content-[''] before:w-3/5 before:h-8 before:bg-sky-800 before:absolute before:left-0 before:top-1/2 before:z-[-1] z-10 before:block animate-fade-slide-down ">
+      <h1 className="text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-3/5 after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide ">
         Portfolio
       </h1>
       <div className="grid col-span-1 justify-center items-center gap-14">

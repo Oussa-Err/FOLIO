@@ -7,17 +7,18 @@ import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
   const [toggleMenu, setToggle] = useState(false);
-  const [scroll, setScroll] = useState(false)
+  const [scroll, setScroll] = useState(false);
+  const [isOpen, seIsOpen] = useState(true);
 
   const checkScroll = () => {
-    setScroll(!scroll)
-    
+    setScroll(!scroll);
+
     if (!scroll) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = ''
+      document.body.style.overflow = "";
     }
-  }
+  };
 
   return (
     <div>
@@ -30,38 +31,69 @@ export const Header = () => {
           </Link>
           <ul className="hidden text-xl md:flex items-center gap-8  ">
             <li className="animate-navLinks">
-              <a href="#about" className="transition-all duration-500 ease-in-out hover:text-sky-400">About</a>
+              <a
+                href="#about"
+                className="transition-all duration-500 ease-in-out hover:text-sky-400"
+              >
+                About
+              </a>
             </li>
             <li className="animate-navLinks-A">
-              <a href="#portfolio" className="transition-all duration-500 ease-in-out hover:text-sky-400">Portfolio</a>
+              <a
+                href="#portfolio"
+                className="transition-all duration-500 ease-in-out hover:text-sky-400"
+              >
+                Portfolio
+              </a>
             </li>
             <li className="animate-navLinks-B">
-              <a href="#blog" className="transition-all duration-500 ease-in-out hover:text-sky-400">Blog</a>
+              <a
+                href="#blog"
+                className="transition-all duration-500 ease-in-out hover:text-sky-400"
+              >
+                Blog
+              </a>
             </li>
             <li className="animate-navLinks-C">
-              <a href="#contact" className="transition-all duration-500 ease-in-out hover:text-sky-400">Contact</a>
+              <a
+                href="#contact"
+                className="transition-all duration-500 ease-in-out hover:text-sky-400"
+              >
+                Contact
+              </a>
             </li>
           </ul>
           <div className="flex items-center md:hidden">
             {toggleMenu ? (
               <FontAwesomeIcon
                 icon={faClose}
-                size='2x'
+                size="2x"
                 className="relative z-50 cursor-pointer"
-                onClick={() => {setToggle(false), checkScroll()}}
+                onClick={() => {
+                  setToggle(false), checkScroll(), seIsOpen(false);
+                }}
               />
             ) : (
               <FontAwesomeIcon
                 icon={faBars}
-                size='xl'
+                size="xl"
                 className="cursor-pointer"
-                onClick={() => {setToggle(true), checkScroll()}}
+                onClick={() => {
+                  setToggle(true), checkScroll(), seIsOpen(true);
+                }}
               />
             )}
             {toggleMenu && (
-              <div className="overflow-hidden">
-              <ul className={`absolute bg-bg-toggle-color inset-0 z-40 h-screen backdrop-blur-xl flex flex-col text-2xl items-center justify-center gap-8 animate-bg-toggle`}  onClick={() => {setToggle(!toggleMenu), checkScroll()}}>
-                
+              <ul
+                className={
+                  isOpen
+                    ? `absolute bg-bg-toggle-color inset-0 z-40 h-screen backdrop-blur-xl flex flex-col text-2xl items-center justify-center gap-8 open:animate-fade-out after:ease-out animate-bg-toggle`
+                    : `absolute bg-bg-toggle-color inset-0 z-40 h-screen backdrop-blur-xl flex flex-col text-2xl items-center justify-center gap-8 animate-fade-out`
+                }
+                onClick={() => {
+                  setToggle(!toggleMenu), checkScroll();
+                }}
+              >
                 <li className="animate-navLinks-toggle">
                   <a href="#about">About</a>
                 </li>
@@ -75,7 +107,6 @@ export const Header = () => {
                   <a href="#contact">Contact</a>
                 </li>
               </ul>
-              </div>
             )}
           </div>
         </nav>

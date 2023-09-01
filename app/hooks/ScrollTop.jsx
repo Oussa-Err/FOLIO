@@ -29,11 +29,11 @@ export const ScrollTop = () => {
     <div>
       {isTop && (
         <a
-          className="cursor-pointer fixed bottom-[50px] text-sky-800  rounded-full right-[50px]"
+          className="cursor-pointer animate-scrollTop hover:-translate-y-1 transition-all duration-200 fixed bottom-[30px] text-sky-300  rounded-full right-[30px]"
           href="#hero"
           onClick={() => scrollToTop()}
         >
-          <FontAwesomeIcon size="3x" icon={faArrowAltCircleUp} />
+          <FontAwesomeIcon size="2x" icon={faArrowAltCircleUp} />
         </a>
       )}
     </div>

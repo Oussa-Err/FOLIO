@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 
 function Github() {
   return (
-    <div className="min-h-screen grid justify-center items-center">
+    <div className="min-h-screen grid justify-center items-center animate-fade-out">
       <h1 className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-bold">
         Days I <strong className="text-amber-600 ">Code</strong>
       </h1>

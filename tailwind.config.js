@@ -15,11 +15,13 @@ module.exports = {
         'navLinks-B': 'navLinks-B ease-in-out 0.9s',
         'navLinks-C': 'navLinks-C ease-in-out 1.2s',
         'bg-toggle': 'bg-toggle ease-in-out 0.4s',
-        'navLinks-toggle': 'navLinks-toggle ease-in-out 0.5s',
+        'navLinks-toggle': 'navLinks-toggle ease-out 0.5s',
         'navLinks-toggle-A': 'navLinks-toggle-A ease-in-out 0.8s ',
         'navLinks-toggle-B': 'navLinks-toggle-B ease-in-out 1.2s ',
         'navLinks-toggle-C': 'navLinks-toggle-C ease-in-out 1.4s ',
-        'blue-block-slide': 'blue-block-slide ease-in-out 1.4'
+        'blue-block-slide': 'blue-block-slide ease-in-out 1.4s',
+        'scrollTop': 'scrollTop ease-out 1s',
+        'fade-out': 'fade-out ease-in 1s'
       },
       colors: {
         'bg-toggle-color': '#0E1012'
@@ -78,6 +80,14 @@ module.exports = {
         'blue-block-slide': {
           '0%': { opacity: 0, transform: 'translateX(-5rem)' },
           '100%': { opacity: 1, transform: 'translateX(0)' }
+        },
+        'scrollTop': {
+          '0%': { opacity: 0},
+          '100%': { opacity: 1 }
+        },
+        'fade-out': {
+          '100%': { opacity: 1},
+          '0%': {opacity: 0}
         }
       },
     },
