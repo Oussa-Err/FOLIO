@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
     extend: {
@@ -21,7 +22,8 @@ module.exports = {
         'navLinks-toggle-C': 'navLinks-toggle-C ease-in-out 1.4s ',
         'blue-block-slide': 'blue-block-slide ease-in-out 1.4s',
         'scrollTop': 'scrollTop ease-out 1s',
-        'fade-out': 'fade-out ease-in 1s'
+        'fade-out': 'fade-out ease-in 1s',
+        'fade-out-toggleMenu': 'fade-out-toggleMenu ease-out 2s'
       },
       colors: {
         'bg-toggle-color': '#0E1012'
@@ -88,9 +90,14 @@ module.exports = {
         'fade-out': {
           '100%': { opacity: 1},
           '0%': {opacity: 0}
+        },
+        'fade-out-toggleMenu': {
+          '100%': { opacity: 1},
+          '0%': {opacity: 0}
         }
       },
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
+  darkMode: "class"
 }

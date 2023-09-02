@@ -8,7 +8,7 @@ const AnimatedSections = () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('fade-slide-down');
+          entry.target.classList.add('animate-fade-slide-down');
           observer.unobserve(entry.target); // Stop observing once animation is triggered
         }
       });

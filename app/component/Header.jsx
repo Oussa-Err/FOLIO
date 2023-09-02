@@ -8,7 +8,6 @@ import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
 export const Header = () => {
   const [toggleMenu, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);
-  const [isOpen, seIsOpen] = useState(true);
 
   const checkScroll = () => {
     setScroll(!scroll);
@@ -70,7 +69,7 @@ export const Header = () => {
                 size="2x"
                 className="relative z-50 cursor-pointer"
                 onClick={() => {
-                  setToggle(false), checkScroll(), seIsOpen(false);
+                  setToggle(false), checkScroll();
                 }}
               />
             ) : (
@@ -79,17 +78,13 @@ export const Header = () => {
                 size="xl"
                 className="cursor-pointer"
                 onClick={() => {
-                  setToggle(true), checkScroll(), seIsOpen(true);
+                  setToggle(true), checkScroll();
                 }}
               />
             )}
             {toggleMenu && (
               <ul
-                className={
-                  isOpen
-                    ? `absolute bg-bg-toggle-color inset-0 z-40 h-screen backdrop-blur-xl flex flex-col text-2xl items-center justify-center gap-8 open:animate-fade-out after:ease-out animate-bg-toggle`
-                    : `absolute bg-bg-toggle-color inset-0 z-40 h-screen backdrop-blur-xl flex flex-col text-2xl items-center justify-center gap-8 animate-fade-out`
-                }
+                className={`absolute bg-bg-toggle-color inset-0 z-40 h-screen backdrop-blur-xl flex flex-col text-2xl items-center justify-center gap-8  animate-bg-toggle`}
                 onClick={() => {
                   setToggle(!toggleMenu), checkScroll();
                 }}
