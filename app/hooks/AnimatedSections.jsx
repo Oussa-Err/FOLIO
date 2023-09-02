@@ -1,25 +1,23 @@
-"use client"
-import { useEffect } from 'react';
+"use client";
+import { useEffect, useRef, useState } from "react";
 
 const AnimatedSections = () => {
+  const observerRef = useRef();
+  const [myElementVisible, setMyElementVisible] = useState(false);
+
   useEffect(() => {
-    const sections = document.querySelectorAll('.animate-fade-slide-down');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-slide-down');
-          observer.unobserve(entry.target); // Stop observing once animation is triggered
-        }
-      });
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setMyElementVisible(entry.isIntersecting);
     });
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
+    if (observerRef.current) observer.observe(observerRef.current);
+    
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
-  return null;
+  return { observerRef, myElementVisible };
 };
 
 export default AnimatedSections;

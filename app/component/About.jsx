@@ -1,13 +1,18 @@
+"use client"
 import React from "react";
+import AnimatedSections from "../hooks/AnimatedSections";
 
 export const About = () => {
+  const {observerRef, myElementVisible} = AnimatedSections()
+
+
   return (
     <section
       className="min-h-screen max-w-full pt-24 flex justify-center"
       id="about"
     >
       <div className="flex flex-col gap-4 lg:max-w-5xl sm:gap-8">
-        <h1 className="text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-2/4 after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide">
+        <h1 ref={observerRef} className={myElementVisible ? `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-2/4 after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide`: `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-2/4 after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/2 after:z-[-1] z-10 `}>
           Know Who I'M
         </h1>
         <p className="md:text-xl animate-fade-out">

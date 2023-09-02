@@ -1,10 +1,18 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import AnimatedSections from "../hooks/AnimatedSections";
+
+
 
 export const Hero = () => {
+  const {observerRef, myElementVisible} = AnimatedSections()
+
+
   return (
     <section
-      className="min-h-screen flex gap-4 flex-col justify-center items-start animate-fade-slide-down pt-16 sm:pt-0"
+      ref={observerRef}
+      className={myElementVisible? `min-h-screen flex gap-4 flex-col justify-center items-start animate-fade-slide-down pt-16 sm:pt-0`: `min-h-screen flex gap-4 flex-col justify-center items-start pt-16 sm:pt-0`}
       id="Hero"
     >
       <div className="flex flex-col m-auto items-start justify-center">
