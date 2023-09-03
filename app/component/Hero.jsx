@@ -12,7 +12,7 @@ export const Hero = () => {
   return (
     <section
       ref={observerRef}
-      className={myElementVisible? `min-h-screen flex gap-4 flex-col justify-center items-start animate-fade-out-toggleMenu`: `animate-fade-out-toggleMenu min-h-screen flex gap-4 flex-col justify-center items-start`}
+      className={myElementVisible? `min-h-screen flex gap-4 flex-col justify-center items-start animate-fade-out-toggleMenu`: `min-h-screen flex gap-4 flex-col justify-center items-start`}
       id="Hero"
     >
       <div className="flex flex-col m-auto items-start justify-center">
