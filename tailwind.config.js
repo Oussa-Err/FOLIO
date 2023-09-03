@@ -91,8 +91,8 @@ module.exports = {
           '0%': {opacity: 0}
         },
         'fade-out-toggleMenu': {
-          '100%': { opacity: 1},
-          '0%': {opacity: 0}
+          '0%': { opacity: 0, transform: 'translateY(5rem)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' }
         }
       },
     },
