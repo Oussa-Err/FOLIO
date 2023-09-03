@@ -10,8 +10,8 @@ export const Portfolio = () => {
       <h1
         className={
           myElementVisible
-            ? `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-3/5 after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide `
-            : `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-3/5 after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/2 after:z-[-1] z-10`
+            ? `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-3/5 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 sm:after:top-1/2 after:top-2/4 after:z-[-1] z-10 after:animate-blue-block-slide `
+            : `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-3/5 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 sm:after:top-1/2 after:top-2/4 after:z-[-1] z-10  `
         }
         ref={observerRef}
       >

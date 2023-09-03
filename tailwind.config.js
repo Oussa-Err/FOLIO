@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'fade-slide-down': 'fade-slide-down ease-out 1s',
+        'fade-slide-down': 'fade-slide-down ease-out 1.4s',
         'shakeHands': 'shakeHands 2s infinite',
         'navLinks': 'navLinks ease-in-out 0.5s',
         'navLinks-A': 'navLinks-A ease-in-out 0.7s',
