@@ -1,13 +1,15 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
   const [toggleMenu, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [fadeProp, setFadeProp] = useState(false);
+  
 
   const checkScroll = () => {
     setScroll(!scroll);
@@ -67,7 +69,7 @@ export const Header = () => {
               <FontAwesomeIcon
                 icon={faClose}
                 size="2x"
-                className="relative z-50 text-black cursor-pointer animate-fade-out"
+                className="relative z-50 text-black cursor-pointer prev"
                 onClick={() => {
                   setToggle(false);
                   checkScroll();
@@ -77,7 +79,7 @@ export const Header = () => {
               <FontAwesomeIcon
                 icon={faBars}
                 size="xl"
-                className="cursor-pointer animate-fade-out"
+                className="cursor-pointer"
                 onClick={() => {
                   setToggle(true);
                   checkScroll();
@@ -85,27 +87,28 @@ export const Header = () => {
               />
             )}
             {toggleMenu && (
-              <ul
-                className={`modal close-button absolute inset-0 z-40 h-screen flex flex-col text-2xl items-center justify-center gap-8 animate-bg-toggle `}
-                closing
-                onClick={() => {
-                  setToggle(!toggleMenu);
-                  checkScroll();
-                }}
-              >
-                <li className="animate-navLinks-toggle">
-                  <a href="#about">About</a>
-                </li>
-                <li className="animate-navLinks-toggle-A">
-                  <a href="#portfolio">Portfolio</a>
-                </li>
-                <li className="animate-navLinks-toggle-B">
-                  <a href="#blog">Blog</a>
-                </li>
-                <li className="animate-navLinks-toggle-C">
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
+              <div className={`bg-white text-black absolute inset-0 z-40 h-screen animate-bg-toggle`}>
+                  <ul
+                    className={`h-full flex flex-col text-2xl items-center justify-center gap-8 after:animate-fade-out  duration-300 `}
+                    onClick={() => {
+                      setToggle(!toggleMenu);
+                      checkScroll();
+                    }}
+                  >
+                    <li className="animate-navLinks-toggle">
+                      <a href="#about">About</a>
+                    </li>
+                    <li className="animate-navLinks-toggle-A">
+                      <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li className="animate-navLinks-toggle-B">
+                      <a href="#blog">Blog</a>
+                    </li>
+                    <li className="animate-navLinks-toggle-C">
+                      <a href="#contact">Contact</a>
+                    </li>
+                  </ul>
+              </div>
             )}
           </div>
         </nav>

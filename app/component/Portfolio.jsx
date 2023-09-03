@@ -61,10 +61,9 @@ export const Portfolio = () => {
             <p className="text-center text-lg sm:text-xl md:text-left">
               Presenting a comprehensive e-commerce platform dedicated to
               organic living. Discover a wide array of organic vegetables, oils,
-              eggs, and chicken meat, designed with a
-              responsive interface that gracefully adjusts to various screen
-              sizes, ensuring a seamless experience on tablets and mobile
-              devices.
+              eggs, and chicken meat, designed with a responsive interface that
+              gracefully adjusts to various screen sizes, ensuring a seamless
+              experience on tablets and mobile devices.
             </p>
             <div className="w-full flex justify-between">
               <a
@@ -97,9 +96,9 @@ export const Portfolio = () => {
               GPT3
             </h3>
             <p className="text-center text-lg sm:text-xl md:text-left">
-              This project consists of an application for tracking orders. Just
-              enter the tracking code, and if valid, the information is returned
-              in detail. The data comes through an API. Developed with React.js.
+              My first single-page web project, where design meets simplicity.
+              Crafted with Create React App (CRA), this creation is all about
+              aesthetics and layout design.
             </p>
             <div className="w-full flex justify-between">
               <a
@@ -128,9 +127,9 @@ export const Portfolio = () => {
               Play play
             </h3>
             <p className="text-center text-lg sm:text-xl md:text-left">
-              Crafting a full stack web application focused on TSF Foundation's
-              mission. Utilizing Next.js and Node.js to build a dynamic platform
-              that seamlessly connects purpose and technology.
+              Discover laughter with our Meme, Jokes, Riddles, and More
+              Generator! Crafted using HTML, CSS, and Vanilla JavaScript, I used
+              APIs to serve up a dynamic selection of entertaining content.
             </p>
             <div className="w-full flex justify-between">
               <a

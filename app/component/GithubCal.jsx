@@ -9,7 +9,7 @@ function Github() {
 
   return (
     <div ref={observerRef} className='min-h-screen grid justify-center items-center '>
-      <h1 ref={observerRef} className={myElementVisible? `text-[3rem] sm:text-[4rem] lg:text-[5rem] animate-fade-out font-bold`: 
+      <h1 ref={observerRef} className={myElementVisible? `text-[3rem] sm:text-[4rem] lg:text-[5rem] animate-scrollTop font-bold`: 
     `text-[3rem] sm:text-[4rem] lg:text-[5rem] font-bold`}>
         Days I <strong className="text-amber-600 ">Code</strong>
       </h1>
