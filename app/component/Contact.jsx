@@ -18,7 +18,7 @@ export const Contact = () => {
       >
         Contact
       </h1>
-      <p className="text-xl px-2 md:px-0 md:2/3 lg:w-2/5 font-mono   text-center">
+      <p className="text-xl px-2 md:px-0 md:2/3 lg:w-2/5 text-center">
         If you want to carry out a project or chat with me, do not hesitate to
         send me an email:&nbsp;
         <a href="mailto:erraoui.ouss@gmail.com" className="text-sky-500">

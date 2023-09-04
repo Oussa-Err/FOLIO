@@ -69,7 +69,7 @@ export const Header = () => {
               <FontAwesomeIcon
                 icon={faClose}
                 size="2x"
-                className="relative z-50 text-black cursor-pointer prev"
+                className="relative z-50 text-black cursor-pointer animate-rotated"
                 onClick={() => {
                   setToggle(false);
                   checkScroll();
@@ -79,7 +79,7 @@ export const Header = () => {
               <FontAwesomeIcon
                 icon={faBars}
                 size="xl"
-                className="cursor-pointer"
+                className="cursor-pointer open:animate-rotated"
                 onClick={() => {
                   setToggle(true);
                   checkScroll();
@@ -89,7 +89,7 @@ export const Header = () => {
             {toggleMenu && (
               <div className={`bg-white text-black absolute inset-0 z-40 h-screen animate-bg-toggle`}>
                   <ul
-                    className={`h-full flex flex-col text-2xl items-center justify-center gap-8 after:animate-fade-out  duration-300 `}
+                    className={`h-full flex flex-col text-2xl items-center justify-center gap-8 animate-fade-out  transition ease-in-out  duration-300  group disabled:fade-out `}
                     onClick={() => {
                       setToggle(!toggleMenu);
                       checkScroll();

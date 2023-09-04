@@ -22,7 +22,9 @@ module.exports = {
         'blue-block-slide': 'blue-block-slide ease-in-out 1.4s',
         'scrollTop': 'scrollTop ease-out 1s',
         'fade-out': 'fade-out ease-in-out 2s forwards',
-        'fade-out-toggleMenu': 'fade-out-toggleMenu ease-out 2s'
+        'fade-out-toggleMenu': 'fade-out-toggleMenu ease-out 2s',
+        'rotated': 'rotated ease-in .3s'
+
       },
       colors: {
         'bg-toggle-color': '#0E1012'
@@ -83,18 +85,24 @@ module.exports = {
           '100%': { opacity: 1, transform: 'translateX(0)' }
         },
         'scrollTop': {
-          '0%': { opacity: 0},
+          '0%': { opacity: 0 },
           '100%': { opacity: 1 }
         },
         'fade-out': {
-          '100%': { opacity: 1},
-          '0%': {opacity: 0}
+          '100%': { opacity: 1 },
+          '0%': { opacity: 0 }
         },
         'fade-out-toggleMenu': {
           '0%': { opacity: 0, transform: 'translateY(5rem)' },
           '100%': { opacity: 1, transform: 'translateY(0)' }
+        },
+        'rotated': {
+          '0%': { transform: 'rotate(0.0deg)' },
+          '100%': {
+            transform: 'rotate(100.0deg)'
+          },
         }
-      },
+      }
     },
   },
   plugins: [],

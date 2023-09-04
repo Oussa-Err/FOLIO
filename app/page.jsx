@@ -11,11 +11,12 @@ export default function Home() {
     <main className="px-8 md:px-24">
       <ScrollTop />
       <Header />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Github />
-      <Contact />
+      
+        <Hero />
+        <About />
+        <Portfolio />
+        <Github />
+        <Contact />
     </main>
   );
 }
