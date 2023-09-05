@@ -9,7 +9,7 @@ export const Contact = () => {
   return (
     <section
       ref={observerRef}
-      className={myElementVisible? `min-h-screen h-auto gap-8  flex flex-col justify-center items-center animate-fade-slide-down`: `min-h-screen gap-8  flex flex-col justify-center items-center `}
+      className={myElementVisible? `min-h-screen h-auto gap-8 flex flex-col justify-center items-center animate-fade-slide-down`: `min-h-screen gap-8 flex flex-col justify-center items-center `}
       id="contact"
     >
       <h1
@@ -18,7 +18,7 @@ export const Contact = () => {
       >
         Contact
       </h1>
-      <p className="text-xl px-2 md:px-0 md:2/3 lg:w-2/5 text-center">
+      <p className="text-xl lg:w-2/5 text-center">
         If you want to carry out a project or chat with me, do not hesitate to
         send me an email:&nbsp;
         <a href="mailto:erraoui.ouss@gmail.com" className="text-sky-500">
@@ -28,7 +28,7 @@ export const Contact = () => {
       <a
         href="https://linktr.ee/oussamaerr"
         target={"_blank"}
-        className="py-[12px] px-[40px] md:mt-8 rounded-md bg-sky-600 hover:scale-110 transition-all ease-in-out"
+        className="py-[12px] px-[40px] md:mt-8 rounded-md bg-sky-600 hover:-translate-y-2 transition-all ease-in-out"
       >
         Contact
       </a>
