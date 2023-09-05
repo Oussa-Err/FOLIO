@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import React from "react";
 import AnimatedSections from "../hooks/AnimatedSections";
 
 export const About = () => {
-  const {observerRef, myElementVisible} = AnimatedSections()
-
+  const { observerRef, myElementVisible } = AnimatedSections();
 
   return (
     <section
@@ -12,7 +11,14 @@ export const About = () => {
       id="about"
     >
       <div className="flex flex-col gap-4 lg:max-w-5xl sm:gap-8">
-        <h1 ref={observerRef} className={myElementVisible ? `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-2/4 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide`: `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-2/4 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10`}>
+        <h1
+          ref={observerRef}
+          className={
+            myElementVisible
+              ? `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-2/4 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide`
+              : `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-2/4 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10`
+          }
+        >
           Know Who I'M
         </h1>
         <p className="md:text-xl animate-fade-out">
@@ -36,9 +42,8 @@ export const About = () => {
           been dedicating about 12 hours a day to studies.
         </p>
         <p className="md:text-lg animate-fade-out">
-          I have a huge passion for helping people who are just starting. Codes,
-          movies, video games, music, podcast and studies are subjects that
-          interest me.
+          Codes, series, video games, music, podcast and studies are subjects
+          that interest me.
         </p>
         <p className="md:text-lg animate-fade-out">
           I see that I am on the right path because I love helping people who
