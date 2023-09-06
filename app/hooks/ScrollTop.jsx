@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";

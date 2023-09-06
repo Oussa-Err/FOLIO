@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Oussama",
+  title: "SSAMA",
   description: "Personal Potfolio",
 };
 
