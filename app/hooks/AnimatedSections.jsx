@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const AnimatedSections = () => {
   const observerRef = useRef();
-  const [myElementVisible, setMyElementVisible] = useState(false);
+  const [myElementVisible, setMyElementVisible] = useState(true);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
