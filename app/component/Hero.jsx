@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import AnimatedSections from "../hooks/AnimatedSections";
+import Type from "../hooks/TypeWriter";
 
 
 
@@ -26,7 +27,7 @@ export const Hero = () => {
           I am Oussama <span className="text-orange-400">Err</span>aoui.
         </h1>
         <h1 className="text-[2rem] md:text-[3rem] lg:text-[4.8rem] font-bold">
-          I create things for the web.
+          <Type/>
         </h1>
         <h4 className="text-xl py-8">
           Fullstack developer&nbsp;<em className="line-through">and designer</em>

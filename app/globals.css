@@ -35,11 +35,10 @@ body {
 }
 
 ::-moz-selection {
-  background: rgb(46, 46, 1);
-}
+  background: #0170b9}
 
 ::selection {
-  background: rgb(46, 46, 1);
+  background: #0170b9
 }
 
 .hover-animate-navLinks-toggle {
@@ -101,6 +100,7 @@ body {
 .lds-ring div:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);
