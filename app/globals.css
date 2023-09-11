@@ -45,28 +45,52 @@ body {
   animation: navLinks-toggle-C 1s ease 1s;
 }
 
+.background {
+  transform: translateZ(-10px) scale(2);
+}
 
-
-
-.modal {
-  box-shadow: var(--shadow-2), 0 0 0 100vw rgb(0 0 0 / 0.5);
-  background: #fff;
-  color: #222;
-  border: 0;
-  border-radius: 0.25rem;
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
 }
 
 
-.modal[closing] {
-  display: block;
-  pointer-events: none;
-  inset: 0;
-  animation: fade-out 500ms forwards;
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
 }
 
-.prev, .modal {
-  animation-delay: 0.5s
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
 }
+
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* loading page animation */
 .lds-ring {
