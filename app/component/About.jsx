@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import AnimatedSections from "../hooks/AnimatedSections";
 
 export const About = () => {

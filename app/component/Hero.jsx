@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import React from "react";
 import AnimatedSections from "../hooks/AnimatedSections";
 import Type from "../hooks/TypeWriter";
 
