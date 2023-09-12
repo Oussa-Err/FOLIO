@@ -65,19 +65,19 @@ module.exports = {
           '100%': { opacity: 1, transform: 'translateX(0)' }
         },
         'navLinks-toggle': {
-          '0%': { opacity: 0, transform: 'translateX(-2rem)' },
+          '0%': { opacity: 1, transform: 'translateX(-5rem)' },
           '100%': { opacity: 1, transform: 'translateX(0)' }
         },
         'navLinks-toggle-A': {
-          '0%': { opacity: 0, transform: 'translateX(-3rem)' },
+          '0%': { opacity: 1, transform: 'translateX(-6rem)' },
           '100%': { opacity: 1, transform: 'translateX(0)' }
         },
         'navLinks-toggle-B': {
-          '0%': { opacity: 0, transform: 'translateX(-4rem)' },
+          '0%': { opacity: 1, transform: 'translateX(-7rem)' },
           '100%': { opacity: 1, transform: 'translateX(0)' }
         },
         'navLinks-toggle-C': {
-          '0%': { opacity: 0, transform: 'translateX(-5rem)' },
+          '0%': { opacity: 1, transform: 'translateX(-8rem)' },
           '100%': { opacity: 1, transform: 'translateX(0)' }
         },
         'blue-block-slide': {

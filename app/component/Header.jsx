@@ -1,6 +1,6 @@
 "use client";
+import React from "react";
 import Link from "next/link";
-import { useScroll } from "../hooks/useScroll";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
@@ -8,23 +8,6 @@ import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
 export const Header = () => {
   const [toggleMenu, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);
-  
-  const [scrollY, setScrollY] = useState(0);
-  const scrollAnimation = useScroll();
-
-  useEffect(() => {
-    // Update the scrollY state when the scroll position changes
-    setScrollY(scrollAnimation.y);
-  }, [scrollAnimation]);
-
-  // Calculate the animation progress based on scrollY and page height
-  const pageHeight = document.body.scrollHeight - window.innerHeight;
-  const animationProgress = scrollY / pageHeight;
-
-  // Apply CSS styles to move the period right or left
-  const logoTextStyle = {
-    transform: `translateX(${animationProgress * 100}px)`, // Adjust the factor as needed
-  };
 
   const checkScroll = () => {
     setScroll(!scroll);
@@ -36,14 +19,13 @@ export const Header = () => {
     }
   };
 
-
   return (
     <div>
       <header className="backdrop-blur-lg z-40 top-0 drop-shadow-lg inset-x-0 fixed">
         <nav className="flex justify-between pt-2 sm:pt-1 pb-1 px-12 md:px-20">
           <Link href={"/"}>
             <h1 className="text-orange-400 relative z-50 font-serif text-[2rem] md:text-[3rem]">
-              Err<span className="period" style={logoTextStyle}>.</span>
+              Err.
             </h1>
           </Link>
           <ul className="hidden text-xl md:flex items-center gap-8  ">
