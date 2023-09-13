@@ -22,7 +22,7 @@ module.exports = {
         'blue-block-slide': 'blue-block-slide ease-in-out 1.4s',
         'scrollTop': 'scrollTop ease-out 1s',
         'fade-out': 'fade-out ease-in-out 2s forwards',
-        'fade-out-toggleMenu': 'fade-out-toggleMenu ease-out 2s',
+        'fade-out-toggleMenu': 'fade-out-toggleMenu ease-out 1s',
         'rotated': 'rotated ease-in .3s'
 
       },
@@ -93,7 +93,7 @@ module.exports = {
           '0%': { opacity: 0 }
         },
         'fade-out-toggleMenu': {
-          '0%': { opacity: 0, transform: 'translateY(5rem)' },
+          '0%': { opacity: 0, transform: 'translateY(-5rem)' },
           '100%': { opacity: 1, transform: 'translateY(0)' }
         },
         'rotated': {
