@@ -53,7 +53,8 @@ export const Hero = () => {
             }>
           <a
             href="/assets/curriculum-vitae-en-version.pdf"
-            // className="cursor-pointer"
+            target='_blank'
+            style={{ width: '100%', height: '100%' }}
           >
             Resume
           </a>
