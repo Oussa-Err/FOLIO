@@ -47,8 +47,8 @@ export const Header = () => {
             </li>
             <li className="animate-navLinks-B">
               <a
-                href="#blog"
-                className="transition-all duration-500 ease-in-out hover:text-sky-400"
+                href="javascript:void(0)"
+                className="transition-all duration-500 ease-in-out text-gray-600 hover:text-gray-400" disabled
               >
                 Blog
               </a>
