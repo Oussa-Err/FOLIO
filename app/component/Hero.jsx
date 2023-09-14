@@ -52,7 +52,7 @@ export const Hero = () => {
                 : `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent border-2 border-sky-700 hover:-translate-y-2 transition-all ease-in-out text-lg text-sky-100`
             }>
           <a
-            href="#portfolio"
+            href="/assets/curriculum-vitae-en-version.pdf"
             // className="cursor-pointer"
           >
             Resume
