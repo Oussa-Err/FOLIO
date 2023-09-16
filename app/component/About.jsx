@@ -6,7 +6,7 @@ export const About = () => {
 
   return (
     <section
-      className="min-h-screen max-w-full pt-24 flex justify-center"
+      className="h-screen flex justify-center"
       id="about"
       ref={observerRef}
     >
@@ -15,13 +15,13 @@ export const About = () => {
           ref={observerRef}
           className={
             myElementVisible
-              ? `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-2/4 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide`
-              : `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-2/4 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10`
+              ? `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold animate-fade-slide-down after:content-[''] after:w-1/4 after:h-4 sm:after:h-6 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide`
+              : `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold after:content-[''] after:w-1/4 after:h-4 sm:after:h-6 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10`
           }
         >
           Know Who I'M
         </h1>
-        <div ref={observerRef} className={myElementVisible? `flex flex-col gap-4 lg:max-w-5xl sm:gap-8 animate-fade-out` : `flex flex-col gap-4 lg:max-w-5xl sm:gap-8 `}>
+        <div ref={observerRef} className={myElementVisible? `flex flex-col gap-4 lg:max-w-6xl sm:gap-8 animate-fade-out` : `flex flex-col gap-4 lg:max-w-5xl sm:gap-8 `}>
           <p className="md:text-xl animate-fade-out">
             My name is Oussama, I’m from Morocco and I’m 22 years old.
           </p>

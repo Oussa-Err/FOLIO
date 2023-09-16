@@ -20,7 +20,7 @@ module.exports = {
         'navLinks-toggle-B': 'navLinks-toggle-B ease-in-out 1.2s ',
         'navLinks-toggle-C': 'navLinks-toggle-C ease-in-out 1.4s ',
         'blue-block-slide': 'blue-block-slide ease-in-out 1.4s',
-        'scrollTop': 'scrollTop ease-out 1s',
+        'scrollTop': 'scrollTop ease-out 2s',
         'fade-out': 'fade-out ease-in-out 2s forwards',
         'fade-out-toggleMenu': 'fade-out-toggleMenu ease-out 1s',
         'rotated': 'rotated ease-in .3s'

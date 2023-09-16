@@ -6,7 +6,7 @@ export const Portfolio = () => {
   const { observerRef, myElementVisible } = AnimatedSections();
 
   return (
-    <section className="min-h-screen  gap-4 pt-28  " id="portfolio">
+    <section className="min-h-screen  gap-4  " id="portfolio">
       <h1
         className={
           myElementVisible
