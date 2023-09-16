@@ -8,7 +8,7 @@ export const About = () => {
     <section
       className="min-h-screen flex justify-center"
       id="about"
-      ref={observerRef}
+
     >
       <div className="flex flex-col">
         <h1
