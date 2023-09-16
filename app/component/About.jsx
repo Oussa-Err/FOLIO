@@ -6,7 +6,7 @@ export const About = () => {
 
   return (
     <section
-      className="h-screen flex justify-center"
+      className="min-h-screen flex justify-center"
       id="about"
       ref={observerRef}
     >

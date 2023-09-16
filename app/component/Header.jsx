@@ -100,7 +100,7 @@ export const Header = () => {
                       <a href="#portfolio">Portfolio</a>
                     </li>
                     <li className="animate-navLinks-toggle-B">
-                      <a href="#blog">Blog</a>
+                      <a href="javascript:void(0)">Blog</a>
                     </li>
                     <li className="animate-navLinks-toggle-C">
                       <a href="#contact">Contact</a>
