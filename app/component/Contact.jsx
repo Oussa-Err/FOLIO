@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <section
       ref={observerRef}
-      className={myElementVisible? `min-h-screen h-auto gap-8 flex flex-col justify-center items-center animate-fade-slide-down`: `min-h-screen gap-8 flex flex-col justify-center items-center `}
+      className={myElementVisible? `h-[40rem] gap-8 flex flex-col justify-center items-center animate-fade-slide-down`: `gap-8 flex flex-col justify-center items-center h-auto`}
       id="contact"
     >
       <h1
