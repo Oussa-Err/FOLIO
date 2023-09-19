@@ -32,14 +32,14 @@ export const Portfolio = () => {
               <a
                 href="https://tsf-foundation.vercel.app"
                 target="_blank"
-                className="text-lg"
+                className="text-lg font-semibold hover:underline"
               >
                 Visit <span className="text-xl font-extrabold">&rarr;</span>
               </a>
               <a
                 href="https://github.com/Oussa-Err/TSF-FOUNDATION"
                 target="_blank"
-                className="text-lg"
+                className="text-lg font-semibold hover:underline"
               >
                 Source
               </a>
@@ -69,14 +69,14 @@ export const Portfolio = () => {
               <a
                 href="https://farmkhemisset.com/"
                 target="_blank"
-                className="text-lg"
+                className="text-lg font-semibold hover:underline"
               >
                 Visit <span className="text-xl font-extrabold">&rarr;</span>
               </a>
               <a
                 href="https://github.com/Oussa-Err/solid-spork"
                 target="_blank"
-                className="text-lg"
+                className="text-lg font-semibold hover:underline"
               >
                 Source
               </a>
@@ -104,14 +104,14 @@ export const Portfolio = () => {
               <a
                 href="https://gpt3project1.netlify.app/"
                 target="_blank"
-                className="text-lg"
+                className="text-lg font-semibold hover:underline"
               >
                 Visit <span className="text-xl font-extrabold">&rarr;</span>
               </a>
               <a
                 href="https://github.com/Oussa-Err/improved-manoeuvre"
                 target="_blank"
-                className="text-lg"
+                className="text-lg font-semibold hover:underline"
               >
                 Source
               </a>
@@ -135,14 +135,14 @@ export const Portfolio = () => {
               <a
                 href="https://oussa-err.github.io/playPlay/"
                 target="_blank"
-                className="text-lg"
+                className="text-lg font-semibold hover:underline"
               >
                 Visit <span className="text-xl font-extrabold">&rarr;</span>
               </a>
               <a
                 href="https://github.com/Oussa-Err/playPlay"
                 target="_blank"
-                className="text-lg"
+                className="text-lg font-semibold hover:underline"
               >
                 Source
               </a>
