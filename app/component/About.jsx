@@ -6,13 +6,14 @@ export const About = () => {
 
   return (
     <section
+    ref={observerRef}
       className="min-h-screen flex justify-center"
       id="about"
 
     >
       <div className="flex flex-col">
         <h1
-          ref={observerRef}
+          
           className={
             myElementVisible
               ? `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold animate-fade-slide-down after:content-[''] after:w-1/4 after:h-4 sm:after:h-6 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide`
