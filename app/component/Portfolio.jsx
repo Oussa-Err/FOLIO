@@ -133,7 +133,7 @@ export const Portfolio = () => {
             </p>
             <div className="w-full flex justify-between">
               <a
-                href="https://oussa-err.github.io/playPlay/"
+                href="https://playplay.netlify.app/"
                 target="_blank"
                 className="text-lg font-semibold hover:underline"
               >

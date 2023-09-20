@@ -49,12 +49,11 @@ export const Hero = () => {
             className={
               myElementVisible
                 ? `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent border-2 border-sky-700 hover:-translate-y-2 transition-all ease-in-out text-lg text-sky-100 animate-fade-out inline-block`
-                : `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent border-2 border-sky-700 hover:-translate-y-2 transition-all ease-in-out text-lg text-sky-100`
+                : `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent border-2 border-sky-700 hover:focus: transition-all ease-in-out text-lg text-sky-100`
             }>
           <a
-            href="/assets/curriculum-vitae-en-version.pdf"
+            href="/resume"
             target='_blank'
-            style={{ width: '100%', height: '100%' }}
           >
             Resume
           </a>

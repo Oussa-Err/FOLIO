@@ -31,7 +31,7 @@ export const Header = () => {
           <ul className="hidden text-xl md:flex items-center gap-8  ">
             <li className="animate-navLinks">
               <a
-                href="#about"
+                href="/#about"
                 className="transition-all duration-500 ease-in-out hover:text-sky-400"
               >
                 About
@@ -39,7 +39,7 @@ export const Header = () => {
             </li>
             <li className="animate-navLinks-A">
               <a
-                href="#portfolio"
+                href="/#portfolio"
                 className="transition-all duration-500 ease-in-out hover:text-sky-400"
               >
                 Portfolio
@@ -48,14 +48,14 @@ export const Header = () => {
             <li className="animate-navLinks-B">
               <a
                 href="javascript:void(0)"
-                className="transition-all duration-500 ease-in-out text-gray-600 hover:text-gray-400" disabled
+                className="transition-all duration-500 ease-in-out text-gray-600 hover:text-gray-400" 
               >
                 Blog
               </a>
             </li>
             <li className="animate-navLinks-C">
               <a
-                href="#contact"
+                href="/#contact"
                 className="transition-all duration-500 ease-in-out hover:text-sky-400"
               >
                 Contact
@@ -94,16 +94,16 @@ export const Header = () => {
                     }}
                   >
                     <li className="animate-navLinks-toggle">
-                      <a href="#about">About</a>
+                      <a href="/#about">About</a>
                     </li>
                     <li className="animate-navLinks-toggle-A">
-                      <a href="#portfolio">Portfolio</a>
+                      <a href="/#portfolio">Portfolio</a>
                     </li>
-                    <li className="animate-navLinks-toggle-B">
+                    <li className="animate-navLinks-toggle-B text-gray-600">
                       <a href="javascript:void(0)">Blog</a>
                     </li>
                     <li className="animate-navLinks-toggle-C">
-                      <a href="#contact">Contact</a>
+                      <a href="/#contact">Contact</a>
                     </li>
                   </ul>
               </div>
