@@ -6,7 +6,10 @@ export const Portfolio = () => {
   const { observerRef, myElementVisible } = AnimatedSections();
 
   return (
-    <section className="min-h-screen w-full md:w-4/5 m-auto gap-4 mt-24" id="portfolio">
+    <section
+      className="min-h-screen w-full md:w-4/5 m-auto gap-4 mt-24"
+      id="portfolio"
+    >
       <h1
         className={
           myElementVisible
@@ -59,11 +62,10 @@ export const Portfolio = () => {
               Healthy Farm
             </h3>
             <p className="text-center text-lg sm:text-xl md:text-left">
-              Presenting a comprehensive e-commerce platform dedicated to
-              organic living. Discover a wide array of organic vegetables, oils,
-              eggs, and chicken meat, designed with a responsive interface that
-              gracefully adjusts to various screen sizes, ensuring a seamless
-              experience on tablets and mobile devices.
+              Introducing a comprehensive e-commerce platform devoted to organic
+              living. Responsive interface that smoothly adapts
+              to various screen sizes. This project was powered by VITE for optimized
+              performance and development efficiency.
             </p>
             <div className="w-full flex justify-between">
               <a
