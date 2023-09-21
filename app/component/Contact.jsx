@@ -7,17 +7,21 @@ export const Contact = () => {
 
   return (
     <section
-      ref={observerRef}
-      className={myElementVisible? `h-[40rem] gap-8 flex flex-col justify-center items-center animate-fade-slide-down`: `gap-8 flex flex-col justify-center items-center h-auto`}
+      className="h-[40rem] gap-8 flex flex-col justify-center items-center"
       id="contact"
+      ref={observerRef}
     >
       <h1
         className={myElementVisible? `text-[3rem] block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-full after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide`: `text-[3rem] block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-full after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute  after:left-0 after:top-1/2 after:z-[-1] z-10`}
-        ref={elementRef}
       >
         Contact
       </h1>
-      <p className="text-xl lg:w-2/5 text-center">
+      <p 
+      ref={observerRef}
+      className={
+        myElementVisible ? `ttext-xl lg:w-2/5 text-center animate-fade-out` : `text-xl lg:w-2/5 text-center`
+      }
+      >
         If you want to carry out a project or chat with me, do not hesitate to
         send me an email:&nbsp;
         <a href="mailto:erraoui.ouss@gmail.com" className="text-sky-500">
