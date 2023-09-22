@@ -28,11 +28,11 @@ export const Header = () => {
               Err.
             </h1>
           </Link>
-          <ul className="hidden text-xl md:flex items-center gap-8  ">
+          <ul className="hidden text-xl md:flex items-center gap-8">
             <li className="animate-navLinks">
               <a
                 href="/#about"
-                className="transition-all duration-500 ease-in-out"
+                className=" hover:pb-4"
               >
                 About
               </a>

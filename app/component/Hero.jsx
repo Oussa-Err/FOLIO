@@ -48,10 +48,11 @@ export const Hero = () => {
         <div ref={observerRef}
             className={
               myElementVisible
-                ? `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent border-2 border-sky-700 hover:-translate-y-2 transition-all ease-in-out text-lg text-sky-100 animate-fade-out inline-block`
-                : `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent border-2 border-sky-700 hover:focus: transition-all ease-in-out text-lg text-sky-100`
+                ? `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent hover:text-white focus:outline-none border-[1.5px] border-white hover:border-blue-400 hover:border-[1px] transition-all ease-in-out text-lg text-sky-100 animate-fade-out inline-block`
+                : `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent hover:text-white focus:outline-none border-[1.5px] border-white hover:border-blue-400 hover:border-[1px] transition-all ease-in-out text-lg text-sky-100 inline-block`
             }>
           <a
+          className="cursor-pointer md:cursor-none"
             href="/resume"
             target='_blank'
           >

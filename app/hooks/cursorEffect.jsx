@@ -23,11 +23,11 @@ export const CursorEffect = () => {
 
     links.forEach((link) => {
       link.addEventListener("mouseover", () => {
-        innerCursor.classList.add("scale-y-110");
+        innerCursor.classList.add("scale-125");
       });
 
       link.addEventListener("mouseleave", () => {
-        innerCursor.classList.remove("scale-y-110");
+        innerCursor.classList.remove("scale-125");
       });
     });
 
@@ -38,8 +38,8 @@ export const CursorEffect = () => {
 
   return (
     <>
-      <div className={`inner-cursor z-50`}></div>
-      <div className={`outer-cursor z-50`}></div>
+      <div className={`outer-cursor z-50 hidden md:block shadow-lg shadow-white`}></div>
+      <div className={`inner-cursor z-50 hidden md:block `}></div>
     </>
   );
 };
