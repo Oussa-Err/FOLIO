@@ -32,7 +32,7 @@
   cursor: none;
 }
 
-@media screen and (max-width: 768px ) {
+@media screen and (max-width: 768px) {
   * {
     cursor: auto;
   }
@@ -181,5 +181,4 @@ body {
   mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
-   transition: 0.8ms;
 }
