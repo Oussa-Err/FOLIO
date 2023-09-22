@@ -12,12 +12,12 @@ export const Portfolio = () => {
       ref={observerRef}
     >
       <h1
+        ref={observerRef}
         className={
           myElementVisible
             ? `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-3/5 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-[2.8rem] md:after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide `
             : `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-3/5 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 sm:after:top-1/2 after:top-2/4 after:z-[-1] z-10  `
         }
-        ref={observerRef}
       >
         Portfolio
       </h1>
@@ -64,8 +64,8 @@ export const Portfolio = () => {
             </h3>
             <p className="text-center text-lg sm:text-xl md:text-left">
               Introducing a comprehensive e-commerce platform devoted to organic
-              living. Responsive interface that smoothly adapts
-              to various screen sizes. This project was powered by VITE for optimized
+              living. Responsive interface that smoothly adapts to various
+              screen sizes. This project was powered by VITE for optimized
               performance and development efficiency.
             </p>
             <div className="w-full flex justify-between">
