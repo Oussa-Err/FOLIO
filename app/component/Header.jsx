@@ -89,7 +89,7 @@ export const Header = () => {
                 className={`bg-white text-black absolute inset-0 z-40 h-screen animate-bg-toggle`}
               >
                 <ul
-                  className={`h-full flex flex-col text-2xl items-center justify-center gap-8 animate-fade-out  transition ease-in-out  duration-300  group disabled:fade-out `}
+                  className={`h-full flex flex-col text-2xl items-center justify-center gap-8 animate-fade-out  transition ease-in-out  duration-300 group disabled:fade-out `}
                 >
                   <li className="animate-navLinks-toggle">
                     <a
