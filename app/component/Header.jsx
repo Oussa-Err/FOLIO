@@ -32,7 +32,7 @@ export const Header = () => {
             <li className="animate-navLinks">
               <a
                 href="/#about"
-                className="transition-all duration-500 ease-in-out hover:text-sky-400"
+                className="transition-all duration-500 ease-in-out"
               >
                 About
               </a>
@@ -40,7 +40,7 @@ export const Header = () => {
             <li className="animate-navLinks-A">
               <a
                 href="/#portfolio"
-                className="transition-all duration-500 ease-in-out hover:text-sky-400"
+                className="transition-all duration-500 ease-in-out"
               >
                 Portfolio
               </a>
@@ -48,7 +48,7 @@ export const Header = () => {
             <li className="animate-navLinks-B">
               <a
                 href="javascript:void(0)"
-                className="transition-all duration-500 ease-in-out text-gray-600 hover:text-gray-400" 
+                className="transition-all duration-500 ease-in-out text-gray-600 hover:text-gray-400"
               >
                 Blog
               </a>
@@ -56,7 +56,7 @@ export const Header = () => {
             <li className="animate-navLinks-C">
               <a
                 href="/#contact"
-                className="transition-all duration-500 ease-in-out hover:text-sky-400"
+                className="transition-all duration-500 ease-in-out"
               >
                 Contact
               </a>
@@ -85,27 +85,57 @@ export const Header = () => {
               />
             )}
             {toggleMenu && (
-              <div className={`bg-white text-black absolute inset-0 z-40 h-screen animate-bg-toggle`}>
-                  <ul
-                    className={`h-full flex flex-col text-2xl items-center justify-center gap-8 animate-fade-out  transition ease-in-out  duration-300  group disabled:fade-out `}
-                    onClick={() => {
-                      setToggle(!toggleMenu);
-                      checkScroll();
-                    }}
-                  >
-                    <li className="animate-navLinks-toggle">
-                      <a href="/#about">About</a>
-                    </li>
-                    <li className="animate-navLinks-toggle-A">
-                      <a href="/#portfolio">Portfolio</a>
-                    </li>
-                    <li className="animate-navLinks-toggle-B text-gray-600">
-                      <a href="javascript:void(0)">Blog</a>
-                    </li>
-                    <li className="animate-navLinks-toggle-C">
-                      <a href="/#contact">Contact</a>
-                    </li>
-                  </ul>
+              <div
+                className={`bg-white text-black absolute inset-0 z-40 h-screen animate-bg-toggle`}
+              >
+                <ul
+                  className={`h-full flex flex-col text-2xl items-center justify-center gap-8 animate-fade-out  transition ease-in-out  duration-300  group disabled:fade-out `}
+                >
+                  <li className="animate-navLinks-toggle">
+                    <a
+                      href="/#about"
+                      onClick={() => {
+                        setToggle(!toggleMenu);
+                        checkScroll();
+                      }}
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li className="animate-navLinks-toggle-A">
+                    <a
+                      href="/#portfolio"
+                      onClick={() => {
+                        setToggle(!toggleMenu);
+                        checkScroll();
+                      }}
+                    >
+                      Portfolio
+                    </a>
+                  </li>
+                  <li className="animate-navLinks-toggle-B text-gray-600">
+                    <a
+                      href="javascript:void(0)"
+                      onClick={() => {
+                        setToggle(!toggleMenu);
+                        checkScroll();
+                      }}
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li className="animate-navLinks-toggle-C">
+                    <a
+                      href="/#contact"
+                      onClick={() => {
+                        setToggle(!toggleMenu);
+                        checkScroll();
+                      }}
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
               </div>
             )}
           </div>

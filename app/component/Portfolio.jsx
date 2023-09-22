@@ -9,6 +9,7 @@ export const Portfolio = () => {
     <section
       className="min-h-screen w-full md:w-4/5 m-auto gap-4 mt-24"
       id="portfolio"
+      ref={observerRef}
     >
       <h1
         className={

@@ -4,6 +4,7 @@
   html {
     @apply text-neutral-800;
   }
+
   html.dark {
     @apply text-neutral-50;
     @apply bg-neutral-800;
@@ -27,18 +28,22 @@
   }
 }
 
-
+* {
+  cursor: none !important;
+}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: #0e1012
+  color: #fff;
+  background-color: #0e1012;
+  height: 100dvh;
 }
 
 ::-moz-selection {
-  background: #0170b9}
+  background: #245d83
+}
 
 ::selection {
-  background: #0170b9
+  background: #245d83
 }
 
 .hover-animate-navLinks-toggle {
@@ -129,7 +134,45 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/* cursor effects */
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.inner-cursor {
+  position: fixed;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  background: white;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
+}
+
+.scale-y-110 {
+  width: 30px;
+  height: 30px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor {
+  position: fixed;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
 }
