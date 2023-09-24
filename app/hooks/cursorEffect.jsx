@@ -7,6 +7,7 @@ export const CursorEffect = () => {
     const innerCursor = document.querySelector(".inner-cursor");
     const outerCursor = document.querySelector(".outer-cursor");
     const links = document.querySelectorAll("a");
+    const paragraphs = document.querySelectorAll("p");
 
     document.addEventListener("mousemove", moveCursor);
 
@@ -20,6 +21,16 @@ export const CursorEffect = () => {
       outerCursor.style.left = `${x}px`;
       outerCursor.style.top = `${y}px`;
     }
+
+    paragraphs.forEach((paragraph) => {
+      paragraph.addEventListener("mouseover", () => {
+        innerCursor.classList.add("scale-125")
+      })
+
+      paragraph.addEventListener("mouseleave", () => {
+        innerCursor.classList.remove("scale-125")
+      })
+    })
 
     links.forEach((link) => {
       link.addEventListener("mouseover", () => {
