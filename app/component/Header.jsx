@@ -113,7 +113,7 @@ export const Header = () => {
                       Portfolio
                     </a>
                   </li>
-                  <li className="animate-navLinks-toggle-B text-gray-600">
+                  <li className="animate-navLinks-toggle-B text-gray-400">
                     <a
                       href="javascript:void(0)"
                       onClick={() => {
