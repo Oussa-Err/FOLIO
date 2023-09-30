@@ -24,7 +24,7 @@ export const Contact = () => {
       >
         If you want to carry out a project or chat with me, do not hesitate to
         send me an email:&nbsp;
-        <a href="mailto:erraoui.ouss@gmail.com" className="text-sky-500">
+        <a href="mailto:erraoui.ouss@gmail.com" className="text-sky-500 cursor-pointer md:cursor-none">
           erraoui.ouss@gmail.com
         </a>
       </p>
