@@ -4,9 +4,7 @@ import AnimatedSections from "../hooks/AnimatedSections";
 
 function Github() {
   const {observerRef, myElementVisible} = AnimatedSections()
-
-
-
+  
   return (
     <div className='min-h-screen grid justify-center items-center '>
       <h1 ref={observerRef} className={myElementVisible? `text-[3rem] sm:text-[4rem] lg:text-[5rem] animate-scrollTop font-bold`: 

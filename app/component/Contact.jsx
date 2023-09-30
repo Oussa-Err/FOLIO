@@ -31,7 +31,7 @@ export const Contact = () => {
       <a
         href="https://linktr.ee/oussamaerr"
         target={"_blank"}
-        className="py-[12px] px-[40px] md:mt-8 rounded-md bg-sky-600 hover:-translate-y-2 transition-all ease-in-out"
+        className="cursor-pointer md:cursor-none py-[12px] px-[40px] md:mt-8 rounded-md bg-sky-600 hover:-translate-y-2 transition-all ease-in-out"
       >
         Contact
       </a>
