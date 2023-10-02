@@ -9,8 +9,8 @@ import { ScrollTop } from "./hooks/ScrollTop";
 export default function Home() {
   return (
     <main className="px-8 md:px-24">
-      <ScrollTop />
       <Header />
+      <ScrollTop />
       <Hero />
       <About />
       <Portfolio />
