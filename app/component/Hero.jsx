@@ -31,7 +31,7 @@ export const Hero = () => {
         <h1 className="text-[2rem] md:text-[3rem] lg:text-[4.8rem] font-bold">
           I am Oussama <span className="text-orange-400">Err</span>aoui.
         </h1>
-        <h1 className="text-[1.9rem] md:text-[3rem] font-bold">
+        <h1 className="text-[1.2rem] md:text-[2rem] font-bold">
           <Type />
         </h1>
         <h4
