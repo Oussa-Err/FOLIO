@@ -182,3 +182,34 @@ body {
   border-radius: 50%;
   pointer-events: none;
 }
+
+
+/* SWIPER */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 700px !important;
+  height: 700px !important;
+}
+
+.swiper-pagination-bullet{
+  color: #fff !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .swiper-slide {
+    width: 500px !important;
+    height: 500px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .swiper-slide {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
