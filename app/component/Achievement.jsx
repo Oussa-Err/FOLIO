@@ -39,9 +39,9 @@ export default function App() {
             width={1159}
             height={910}
           />
-          <p className="text-center">
+          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
             <a href="">view credentials</a>
-          </p>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="w-[800px]">
           <Image
@@ -50,9 +50,9 @@ export default function App() {
             width={925}
             height={715}
           />
-          <p className="text-center">
+          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
             <a href="">view credentials</a>
-          </p>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <Image
@@ -61,9 +61,9 @@ export default function App() {
             width={1600}
             height={1190}
           />
-          <p className="text-center">
+          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
             <a href="">view credentials</a>
-          </p>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="w-[800px]">
           <Image
@@ -72,9 +72,9 @@ export default function App() {
             width={1317}
             height={903}
           />
-          <p className="text-center">
+          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
             <a href="">view credentials</a>
-          </p>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="w-[800px] ">
           <Image
@@ -83,9 +83,9 @@ export default function App() {
             width={951}
             height={671}
           />
-          <p className="text-center">
+          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
             <a href="">view credentials</a>
-          </p>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="w-[800px]">
           <Image
@@ -94,9 +94,24 @@ export default function App() {
             width={1754}
             height={1238}
           />
-          <p className="text-center">
-            <a href="">view credentials</a>
-          </p>
+          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
+            <a href="https://google.com">view credentials</a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="h-1/2 flex justify-center items-center">
+            <p className="text-center text-lg">
+              <a
+                href="https://www.linkedin.com/in/oussama-erraoui/"
+                className="cursor-pointer"
+              >
+                More Certifications to Explore on LinkedIn{" "}
+                <span className="text-xl font-extrabold cursor-pointer">
+                  &rarr;
+                </span>
+              </a>
+            </p>
+          </div>
         </SwiperSlide>
       </Swiper>
     </section>

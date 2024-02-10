@@ -190,10 +190,11 @@ body {
   background-size: cover;
   width: 700px !important;
   height: 700px !important;
+
 }
 
 .swiper-pagination-bullet{
-  color: #fff !important;
+  background-color: #fff !important;
 }
 
 @media screen and (max-width: 1000px) {
