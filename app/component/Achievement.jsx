@@ -11,7 +11,7 @@ export default function App() {
   const { observerRef, myElementVisible } = AnimatedSections();
 
   return (
-    <section ref={observerRef} className="pt-20">
+    <section ref={observerRef} className="pt-20" id="achievements">
       <h1
         className={`mb-10 text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold after:content-[''] after:w-4/5 after:h-4 sm:after:h-6 after:bg-[#bd631e] after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10`}
       >

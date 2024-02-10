@@ -47,10 +47,10 @@ export const Header = () => {
             </li>
             <li className="animate-navLinks-B">
               <a
-                href="javascript:void(0)"
-                className="transition-all duration-500 ease-in-out text-gray-600 hover:text-gray-400"
+                href="/#achievements"
+                className="transition-all duration-500 ease-in-out"
               >
-                Blog
+                Achievements
               </a>
             </li>
             <li className="animate-navLinks-C">
@@ -113,15 +113,15 @@ export const Header = () => {
                       Portfolio
                     </a>
                   </li>
-                  <li className="animate-navLinks-toggle-B text-gray-400">
+                  <li className="animate-navLinks-toggle-B">
                     <a
-                      href="javascript:void(0)"
+                      href="/#achievements"
                       onClick={() => {
                         setToggle(!toggleMenu);
                         checkScroll();
                       }}
                     >
-                      Blog
+                      Achievements
                     </a>
                   </li>
                   <li className="animate-navLinks-toggle-C">
