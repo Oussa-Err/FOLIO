@@ -53,7 +53,7 @@ export const Hero = () => {
             }>
           <a
           className="cursor-pointer md:cursor-none"
-            href="/resume"
+            href="/assets/curriculum-vitae-en-version.pdf"
             target='_blank'
           >
             Resume
