@@ -25,9 +25,9 @@ export const Portfolio = () => {
       >
         Portfolio
       </h1>
-      <div className="w-full flex flex-col items-end relative top-[-3rem]">
+      <div className="w-full flex flex-col items-end relative top-[-5rem]">
         <button
-          className="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5"
+          className="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-[#fb923c] font-medium rounded-lg text-sm px-2 py-1"
           type="button"
           onClick={() => setFilter(!filter)}
         >

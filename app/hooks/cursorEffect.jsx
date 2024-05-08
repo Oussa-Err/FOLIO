@@ -1,7 +1,8 @@
 "use client";
+
+// not using this cursor effect for now
 import { useEffect } from "react";
 import React from "react";
-
 export const CursorEffect = () => {
   useEffect(() => {
     const innerCursor = document.querySelector(".inner-cursor");

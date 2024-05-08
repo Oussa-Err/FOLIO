@@ -28,7 +28,7 @@
   }
 }
 
-* {
+/* * {
   cursor: none;
 }
 
@@ -36,7 +36,7 @@
   * {
     cursor: auto;
   }
-}
+} */
 
 body {
   color: #fff;
@@ -139,7 +139,7 @@ body {
 
 
 /* cursor effects */
-.grow:hover {
+/* .grow:hover {
   transform: scale(1.1);
 }
 
@@ -172,7 +172,7 @@ body {
   mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
-}
+} */
 
 
 /* SWIPER */

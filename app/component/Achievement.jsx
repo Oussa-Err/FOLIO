@@ -5,7 +5,10 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
+import certificates from "../../Data/certificates.json";
 // import AnimatedSections from "../hooks/AnimatedSections";
+
+console.log(certificates);
 
 export default function App() {
   // const { observerRef, myElementVisible } = AnimatedSections();
@@ -32,109 +35,32 @@ export default function App() {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="w-[800px]">
-          <Image
-            src="/assets/js-cert-freecodecamp.png"
-            quality={100}
-            width={1754}
-            height={1238}
-          />
-          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
-            <a
-              target="_blank"
-              href="https://linkedin.com/in/oussama-erraoui/details/certifications/"
-            >
-              view credentials
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="w-[800px]">
-          <Image
-            src="/assets/freecodeCamp-certf.png"
-            quality={100}
-            width={1159}
-            height={910}
-          />
-          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
-            <a
-              target="_blank"
-              href="https://linkedin.com/in/oussama-erraoui/details/certifications/"
-            >
-              view credentials
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="w-[800px]">
-          <Image
-            src="/assets/postman-api-fundamentals-cert.png"
-            quality={100}
-            width={925}
-            height={715}
-          />
-          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
-            <a
-              target="_blank"
-              href="https://linkedin.com/in/oussama-erraoui/details/certifications/"
-            >
-              view credentials
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src="/assets/full-stack-udemy-cert.jpg"
-            quality={100}
-            width={1600}
-            height={1190}
-          />
-          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
-            <a
-              target="_blank"
-              href="https://linkedin.com/in/oussama-erraoui/details/certifications/"
-            >
-              view credentials
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="w-[800px]">
-          <Image
-            src="/assets/python-course-cert.png"
-            quality={100}
-            width={1317}
-            height={903}
-          />
-          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
-            <a
-              target="_blank"
-              href="https://linkedin.com/in/oussama-erraoui/details/certifications/"
-            >
-              view credentials
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="w-[800px] ">
-          <Image
-            src="/assets/40-alx-aice-ai-career-essentials-certificate-oussama-erraoui.png"
-            quality={100}
-            width={951}
-            height={671}
-          />
-          <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
-            <a
-              target="_blank"
-              href="https://linkedin.com/in/oussama-erraoui/details/certifications/"
-            >
-              view credentials
-            </a>
-          </div>
-        </SwiperSlide>
+        {certificates.map((el, index) => (
+          <SwiperSlide className="w-[700px]">
+            <Image
+              key={index}
+              src={el.image}
+              alt={el.alt}
+              quality={100}
+              width={1754}
+              height={1238}
+            />
+            <div className="mt-3 text-center opacity-80 border border-gray-300 focus:border-white rounded">
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/oussama-erraoui/details/certifications/"
+              >
+                view credentials
+              </a>
+            </div>
+          </SwiperSlide>
+        ))}
         <SwiperSlide>
           <div className="h-1/2 flex justify-center items-center">
             <p className="text-center text-lg">
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/oussama-erraoui/"
-                className="cursor-pointer"
               >
                 More Certifications to Explore on LinkedIn{" "}
                 <span className="text-xl font-extrabold cursor-pointer">
