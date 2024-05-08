@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
+import projects from "../../Data/projects";
 import AnimatedSections from "../hooks/AnimatedSections";
+import { useState } from "react";
 
 export const Portfolio = () => {
   const { observerRef, myElementVisible } = AnimatedSections();
+  const [type, setType] = useState("");
+  const [filter, setFilter] = useState(false);
 
   return (
     <section
@@ -21,141 +25,120 @@ export const Portfolio = () => {
       >
         Portfolio
       </h1>
+      <div className="w-full flex flex-col items-end relative top-[-3rem]">
+        <button
+          className="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5"
+          type="button"
+          onClick={() => setFilter(!filter)}
+        >
+          <span className="sr-only">Action button</span>
+          Filter
+          <DownArrow />
+        </button>
+        <div
+          className={`z-10 relative top-0 ${
+            filter ? "" : "hidden"
+          } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
+        >
+          <ul
+            className="py-1 text-sm text-gray-700"
+            aria-labelledby="dropdownActionButton"
+          >
+            <li>
+              <a
+                href="#portfolio"
+                onClick={() => [setFilter(false), setType("")]}
+                className="block px-4 py-2 hover:bg-gray-100"
+              >
+                ALL
+              </a>
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                onClick={() => [setFilter(false), setType("fullstack")]}
+                className="block px-4 py-2 hover:bg-gray-100"
+              >
+                Full Stack
+              </a>
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                onClick={() => [setFilter(false), setType("frontend")]}
+                className="block px-4 py-2 hover:bg-gray-100"
+              >
+                Frontend
+              </a>
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                onClick={() => [setFilter(false), setType("jamstack")]}
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                JAM stack
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className="grid col-span-1 justify-center items-center gap-14">
-        <div className="flex flex-col-reverse lg:flex-row gap-4 w-full">
-          <div className="flex-1 flex justify-center flex-col gap-8">
-            <h3 className="font-mono text-3xl text-center lg:text-left">
-              TSF foundation
-            </h3>
-            <p className="text-center text-lg sm:text-xl md:text-left ">
-              🔭 Crafting a full stack web application focused on TSF
-              Foundation's mission. Utilizing Next.js and Node.js to build a
-              dynamic platform that seamlessly connects purpose and technology.
-            </p>
-            <div className="w-full flex justify-between">
-              <a
-                href="https://tsf-foundation.vercel.app"
-                target="_blank"
-                className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
-              >
-                Visit <span className="text-xl font-extrabold">&rarr;</span>
-              </a>
-              <a
-                href="https://github.com/Oussa-Err/TSF-FOUNDATION"
-                target="_blank"
-                className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
-              >
-                Source
-              </a>
+        {projects
+          .filter((el) => (type ? el.type === type : el))
+          .map((el, index, item) => (
+            <div
+              key={index}
+              className="flex flex-col-reverse lg:flex-row gap-4 w-full"
+            >
+              <div className="flex-1 flex justify-center flex-col gap-8">
+                <h3 className="font-mono text-3xl text-center lg:text-left">
+                  {el.title}
+                </h3>
+                <p className="text-center text-lg sm:text-xl md:text-left ">
+                  {el.description}
+                </p>
+                <div className="w-full flex justify-between">
+                  <a
+                    href={el.live_url}
+                    target="_blank"
+                    className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
+                  >
+                    Visit <span className="text-xl font-extrabold">&rarr;</span>
+                  </a>
+                  <a
+                    href={el.source_url}
+                    target="_blank"
+                    className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
+                  >
+                    Source
+                  </a>
+                </div>
+              </div>
+              <div className="flex-1">
+                <Image src={el.image} width={700} height={300} />
+              </div>
             </div>
-          </div>
-          <div className="flex-1">
-            <Image
-              src="/assets/tsf-project-screenshot.png"
-              width={700}
-              height={300}
-            />
-          </div>
-        </div>
-        <div className="flex flex-col-reverse lg:flex-row gap-4 w-full">
-          <div className="flex-1 flex justify-center flex-col gap-8">
-            <h3 className="font-mono text-3xl text-center lg:text-left">
-              Healthy Farm
-            </h3>
-            <p className="text-center text-lg sm:text-xl md:text-left">
-              Introducing a comprehensive e-commerce platform devoted to organic
-              living. Responsive interface that smoothly adapts to various
-              screen sizes. This project was powered by VITE for optimized
-              performance and development efficiency.
-            </p>
-            <div className="w-full flex justify-between">
-              <a
-                href="https://farmkhemisset.com/"
-                target="_blank"
-                className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
-              >
-                Visit <span className="text-xl font-extrabold">&rarr;</span>
-              </a>
-              <a
-                href="https://github.com/Oussa-Err/solid-spork"
-                target="_blank"
-                className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
-              >
-                Source
-              </a>
-            </div>
-          </div>
-          <div className="flex-1">
-            <Image
-              src="/assets/healthyfarmProject.png"
-              width={700}
-              height={300}
-            />
-          </div>
-        </div>
-        <div className="flex flex-col-reverse lg:flex-row gap-4 w-full">
-          <div className="flex-1 flex justify-center flex-col gap-8">
-            <h3 className="font-mono text-3xl text-center lg:text-left">
-              GPT3
-            </h3>
-            <p className="text-center text-lg sm:text-xl md:text-left">
-              My first single-page web project, where design meets simplicity.
-              Crafted with Create React App (CRA), this creation is all about
-              aesthetics and layout design.
-            </p>
-            <div className="w-full flex justify-between">
-              <a
-                href="https://gpt3project1.netlify.app/"
-                target="_blank"
-                className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
-              >
-                Visit <span className="text-xl font-extrabold">&rarr;</span>
-              </a>
-              <a
-                href="https://github.com/Oussa-Err/improved-manoeuvre"
-                target="_blank"
-                className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
-              >
-                Source
-              </a>
-            </div>
-          </div>
-          <div className="flex-1">
-            <Image src="/assets/gpt3Project.png" width={700} height={300} />
-          </div>
-        </div>
-        <div className="flex flex-col-reverse lg:flex-row gap-4 w-full">
-          <div className="flex-1 flex justify-center flex-col gap-8">
-            <h3 className="font-mono text-3xl text-center lg:text-left">
-              Play play
-            </h3>
-            <p className="text-center text-lg sm:text-xl md:text-left">
-              Discover laughter with our Meme, Jokes, Riddles, and More
-              Generator! Crafted using HTML, CSS, and Vanilla JavaScript, I used
-              APIs to serve up a dynamic selection of entertaining content.
-            </p>
-            <div className="w-full flex justify-between">
-              <a
-                href="https://playplay.netlify.app/"
-                target="_blank"
-                className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
-              >
-                Visit <span className="text-xl font-extrabold">&rarr;</span>
-              </a>
-              <a
-                href="https://github.com/Oussa-Err/playPlay"
-                target="_blank"
-                className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
-              >
-                Source
-              </a>
-            </div>
-          </div>
-          <div className="flex-1">
-            <Image src="/assets/playplayProject.png" width={700} height={300} />
-          </div>
-        </div>
+          ))}
       </div>
     </section>
   );
 };
+
+const DownArrow = () => (
+  <svg
+    className="w-2.5 h-2.5 ms-2.5"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 10 6"
+  >
+    <path
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="m1 1 4 4 4-4"
+    />
+  </svg>
+);

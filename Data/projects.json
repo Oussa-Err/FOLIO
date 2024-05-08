@@ -1,0 +1,35 @@
+[
+    {
+        "title": "TSF foundation",
+        "description": "🔭 Crafting a full stack web application focused on TSF Foundation's mission. Utilizing Next.js and Express.js to build a dynamic platform that seamlessly connects purpose and technology.",
+        "live_url": "https://tsf-foundation.vercel.app",
+        "source_url": "https://github.com/Oussa-Err/TSF-FOUNDATION",
+        "image": "/assets/tsf-project-screenshot.png",
+        "type": "fullstack"
+    },
+    {
+        "title": "Healthy Farm",
+        "description": "Introducing a comprehensive e-commerce platform devoted  to organic living. Responsive interface that smoothly adapts to various screen sizes. This project was powered by VITE for optimized performance and development efficiency.",
+        "live_url": "https://farmkhemisset.com/",
+        "source_url": "https://github.com/Oussa-Err/solid-spork",
+        "image": "/assets/healthyfarmProject.png",
+        "type": "fullstack"
+    },
+    {
+        "title": "GPT3",
+        "description": "My first single-page web project, where design meets simplicity. Crafted with Create React App (CRA), this creation is all about aesthetics and layout design.",
+        "live_url": "",
+        "source_url": "https://github.com/Oussa-Err/improved-manoeuvre",
+        "image": "/assets/gpt3Project.png",
+        "type": "frontend"
+    },
+    {
+        "title": "Play play",
+        "description": "Discover laughter with our Meme, Jokes, Riddles, and More Generator! Crafted using HTML, CSS, and Vanilla JavaScript, I used APIs to serve up a dynamic selection of entertaining content.",
+        "live_url": "https://playplay.netlify.app/",
+        "source_url": "https://github.com/Oussa-Err/playPlay",
+        "image": "/assets/playplayProject.png",
+        "type": "jamstack"
+    }
+]
+
