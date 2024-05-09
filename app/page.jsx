@@ -16,14 +16,14 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 200);
+    }, 1000);
   }, []);
 
   return (
     <main className="px-8 md:px-24">
       {loading ? (
         loading && (
-          <div className="h-screen flex items-center justify-center">
+          <div className="h-[calc(100vh-200px)]  flex items-center justify-center">
             <Loading />
           </div>
         )

@@ -17,18 +17,18 @@ export const Portfolio = () => {
     >
       <h1
         ref={observerRef}
-        className={
+        className={`text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-3/5 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:z-[-1] z-10 after:top-2/4 ${
           myElementVisible
-            ? `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold animate-fade-slide-down after:content-[''] after:w-3/5 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 after:top-[2.8rem] md:after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide `
-            : `text-[3rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[5rem] font-bold after:content-[''] after:w-3/5 after:h-4 sm:after:h-8 after:bg-sky-800 after:absolute after:left-0 sm:after:top-1/2 after:top-2/4 after:z-[-1] z-10  `
-        }
+            ? "md:after:top-1/2  after:animate-blue-block-slide animate-fade-slide-down"
+            : "sm:after:top-1/2"
+        }`}
       >
         Portfolio
       </h1>
       <div className="w-full flex flex-col items-end relative top-[-2rem] sm:top-[-5rem]">
         <button
           type="button"
-          className="text-sky-950 tracking-wider bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-2 focus:outline-none font-medium rounded-lg text-sm px-2 sm:px-5 py-1 sm:py-2 text-center inline-flex items-center focus:ring-white me-2"
+          className="text-center text-white inline-flex items-center tracking-wider"
           onClick={() => setFilter(!filter)}
         >
           Filter
@@ -36,18 +36,15 @@ export const Portfolio = () => {
         </button>
         <div
           className={`z-10 relative top-0 ${
-            filter ? "" : "hidden"
+            filter ? "absolute inset-0" : "hidden"
           } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
         >
-          <ul
-            className="py-1 text-sm text-gray-700"
-            aria-labelledby="dropdownActionButton"
-          >
+          <ul className="py-1 text-sm text-gray-700">
             <li>
               <a
                 href="#portfolio"
                 onClick={() => [setFilter(false), setType("")]}
-                className="block px-4 py-2 hover:bg-gray-100"
+                className="block px-4 py-2 hover:bg-[#F7BE38]"
               >
                 ALL
               </a>
@@ -56,7 +53,7 @@ export const Portfolio = () => {
               <a
                 href="#portfolio"
                 onClick={() => [setFilter(false), setType("fullstack")]}
-                className="block px-4 py-2 hover:bg-gray-100"
+                className="block px-4 py-2 hover:bg-[#F7BE38]"
               >
                 Full Stack
               </a>
@@ -65,7 +62,7 @@ export const Portfolio = () => {
               <a
                 href="#portfolio"
                 onClick={() => [setFilter(false), setType("frontend")]}
-                className="block px-4 py-2 hover:bg-gray-100"
+                className="block px-4 py-2 hover:bg-[#F7BE38]"
               >
                 Frontend
               </a>
@@ -74,7 +71,7 @@ export const Portfolio = () => {
               <a
                 href="#portfolio"
                 onClick={() => [setFilter(false), setType("jamstack")]}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#F7BE38]"
               >
                 JAM stack
               </a>

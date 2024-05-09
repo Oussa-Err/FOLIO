@@ -2,7 +2,6 @@
 import AnimatedSections from "../hooks/AnimatedSections";
 
 export const Contact = () => {
-  const elementRef = AnimatedSections();
   const { observerRef, myElementVisible } = AnimatedSections();
 
   return (
