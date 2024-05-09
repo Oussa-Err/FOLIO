@@ -25,13 +25,12 @@ export const Portfolio = () => {
       >
         Portfolio
       </h1>
-      <div className="w-full flex flex-col items-end relative top-[-5rem]">
+      <div className="w-full flex flex-col items-end relative top-[-2rem] sm:top-[-5rem]">
         <button
-          className="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-[#fb923c] font-medium rounded-lg text-sm px-2 py-1"
           type="button"
+          className="text-sky-950 tracking-wider bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-2 focus:outline-none font-medium rounded-lg text-sm px-2 sm:px-5 py-1 sm:py-2 text-center inline-flex items-center focus:ring-white me-2"
           onClick={() => setFilter(!filter)}
         >
-          <span className="sr-only">Action button</span>
           Filter
           <DownArrow />
         </button>
@@ -86,7 +85,7 @@ export const Portfolio = () => {
       <div className="grid col-span-1 justify-center items-center gap-14">
         {projects
           .filter((el) => (type ? el.type === type : el))
-          .map((el, index, item) => (
+          .map((el, index) => (
             <div
               key={index}
               className="flex flex-col-reverse lg:flex-row gap-4 w-full"
@@ -102,21 +101,21 @@ export const Portfolio = () => {
                   <a
                     href={el.live_url}
                     target="_blank"
-                    className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
+                    className="text-lg font-semibold hover:underline"
                   >
                     Visit <span className="text-xl font-extrabold">&rarr;</span>
                   </a>
                   <a
                     href={el.source_url}
                     target="_blank"
-                    className="text-lg font-semibold hover:underline cursor-pointer md:cursor-none "
+                    className="text-lg font-semibold hover:underline"
                   >
                     Source
                   </a>
                 </div>
               </div>
               <div className="flex-1">
-                <Image src={el.image} width={700} height={300} />
+                <Image src={el.image} alt={el.alt} width={700} height={300} />
               </div>
             </div>
           ))}

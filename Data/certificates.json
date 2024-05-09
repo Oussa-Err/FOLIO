@@ -1,15 +1,15 @@
 [
     {
         "alt": "js cerificate",
-        "image": "/assets/js-cert-freecodecamp.png"
+        "image": "/assets/js-cert-freecodecamp_result.webp"
     },
     {
         "alt": "frontend ceritificate",
-        "image": "/assets/freecodeCamp-certf.png"
+        "image": "/assets/freecodeCamp-certf_result.webp"
     },
     {
         "alt": "api fundamentals certificate",
-        "image": "/assets/postman-api-fundamentals-cert.png"
+        "image": "/assets/postman-api-fundamentals-cert_result.webp"
     },
     {
         "alt": "fullStack certificate",
@@ -17,10 +17,10 @@
     },
     {
         "alt": "python certificate",
-        "image": "/assets/python-course-cert.png"
+        "image": "/assets/python-course-cert_result.webp"
     },
     {
         "alt": "AICE certificate",
-        "image": "/assets/40-alx-aice-ai-career-essentials-certificate-oussama-erraoui.png"
+        "image": "/assets/40-alx-aice-ai-career-essentials-certificate-oussama-erraoui_result.webp"
     }
 ]

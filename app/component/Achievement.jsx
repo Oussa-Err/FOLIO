@@ -6,13 +6,8 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import certificates from "../../Data/certificates.json";
-// import AnimatedSections from "../hooks/AnimatedSections";
 
-console.log(certificates);
-
-export default function App() {
-  // const { observerRef, myElementVisible } = AnimatedSections();
-
+export default function Achievement() {
   return (
     <section className="pt-20" id="achievements">
       <h1
@@ -31,14 +26,14 @@ export default function App() {
           depth: 100,
           modifier: 1,
         }}
+        initialSlide={1}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
         {certificates.map((el, index) => (
-          <SwiperSlide className="w-[700px]">
+          <SwiperSlide className="w-[700px]" key={index}>
             <Image
-              key={index}
               src={el.image}
               alt={el.alt}
               quality={100}

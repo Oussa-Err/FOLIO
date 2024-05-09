@@ -8,10 +8,10 @@ export const Hero = () => {
 
   return (
     <section
-      className="min-h-screen flex gap-4 flex-col justify-center items-start "
+      className="min-h-screen flex gap-4 flex-col justify-center items-start"
       id="Hero"
     >
-      <div className=" `flex flex-col m-auto items-start justify-center">
+      <div className="flex flex-col m-auto items-start justify-center">
         <div
           ref={observerRef}
           className={
@@ -23,6 +23,7 @@ export const Hero = () => {
           <h4 className="text-[2rem] md:text-[2.2rem]">Hello!</h4>
           <Image
             src={"/assets/hands.svg"}
+            alt="hands"
             className="animate-shakeHands -z-10"
             width={32}
             height={32}
@@ -45,16 +46,17 @@ export const Hero = () => {
           &nbsp;based in Morocco. <br />I always try to write clean code and I
           value performance.
         </h4>
-        <div ref={observerRef}
-            className={
-              myElementVisible
-                ? `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent hover:text-white focus:outline-none border-[1.5px] border-white hover:border-blue-400 hover:border-[1px] transition-all ease-in-out text-lg text-sky-100 animate-fade-out inline-block`
-                : `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent hover:text-white focus:outline-none border-[1.5px] border-white hover:border-blue-400 hover:border-[1px] transition-all ease-in-out text-lg text-sky-100 inline-block`
-            }>
+        <div
+          ref={observerRef}
+          className={
+            myElementVisible
+              ? `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent hover:text-white focus:outline-none border-[1.5px] border-white hover:border-blue-400 hover:border-[1px] transition-all ease-in-out text-lg text-sky-100 animate-fade-out inline-block`
+              : `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent hover:text-white focus:outline-none border-[1.5px] border-white hover:border-blue-400 hover:border-[1px] transition-all ease-in-out text-lg text-sky-100 inline-block`
+          }
+        >
           <a
-          className="cursor-pointer md:cursor-none"
             href="/assets/curriculum-vitae-en-version.pdf"
-            target='_blank'
+            target="_blank"
           >
             Resume
           </a>
