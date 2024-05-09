@@ -1,3 +1,4 @@
+"use client";
 import { About } from "./component/About";
 import Achievement from "./component/Achievement";
 import { Contact } from "./component/Contact";
@@ -6,18 +7,38 @@ import { Header } from "./component/Header";
 import { Hero } from "./component/Hero";
 import { Portfolio } from "./component/Portfolio";
 import { ScrollTop } from "./hooks/ScrollTop";
+import Loading from "./Loading";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 200);
+  }, []);
+
   return (
     <main className="px-8 md:px-24">
-      <Header />
-      <ScrollTop />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Achievement />
-      <Github />
-      <Contact />
+      {loading ? (
+        loading && (
+          <div className="h-screen flex items-center justify-center">
+            <Loading />
+          </div>
+        )
+      ) : (
+        <>
+          <Header />
+          <ScrollTop />
+          <Hero />
+          <About />
+          <Portfolio />
+          <Achievement />
+          <Github />
+          <Contact />
+        </>
+      )}
     </main>
   );
 }
