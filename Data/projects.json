@@ -1,5 +1,23 @@
 [
     {
+        "title": "Jobify",
+        "description": "Jobify is a user-friendly job board app. It serves as a platform that connects job seekers with potential employers. With Jobify, users can effortlessly browse through job listings, and submit applications with ease.",
+        "live_url": "https://jobify-taskno.netlify.app/",
+        "source_url": "https://github.com/Oussa-Err/codsoft_taskno/tree/master/Job_board",
+        "image": "/assets/JobBoard-screenshot_result.webp",
+        "alt": "dev project",
+        "type": "fullstack"
+    },
+    {
+        "title": "QuizIT",
+        "description": "Quiz It is an online quiz maker Single Page Application (SPA). It is designed to gather IT professionals and enthusiasts to participate in quizzes related to various IT concepts. Whether you're looking to test your knowledge or contribute by creating quizzes.",
+        "live_url": "https://quizit-taskno.netlify.app/",
+        "source_url": "https://github.com/Oussa-Err/codsoft_taskno/tree/master/Online_quiz_maker",
+        "image": "/assets/QuizIT-screenshot_result.webp",
+        "alt": "dev project",
+        "type": "fullstack"
+    },
+    {
         "title": "TSF foundation",
         "description": "🔭 Crafting a full stack web application focused on TSF Foundation's mission. Utilizing Next.js and Express.js to build a dynamic platform that seamlessly connects purpose and technology.",
         "live_url": "https://tsf-foundation.vercel.app",
@@ -15,7 +33,7 @@
         "source_url": "https://github.com/Oussa-Err/solid-spork",
         "image": "/assets/healthyfarmProject_result.webp",
         "alt": "dev product",
-        "type": "fullstack"
+        "type": "frontend"
     },
     {
         "title": "GPT3",
@@ -23,7 +41,7 @@
         "live_url": "https://gpt3project1.netlify.app/",
         "source_url": "https://github.com/Oussa-Err/improved-manoeuvre",
         "image": "/assets/gpt3Project_result.webp",
-        "alt": "dev product",
+        "alt": "dev project",
         "type": "frontend"
     },
     {
@@ -32,8 +50,7 @@
         "live_url": "https://playplay.netlify.app/",
         "source_url": "https://github.com/Oussa-Err/playPlay",
         "image": "/assets/playplayProject_result.webp",
-        "alt": "dev product",
+        "alt": "dev project",
         "type": "jamstack"
     }
 ]
-

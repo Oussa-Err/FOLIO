@@ -14,7 +14,7 @@ export const Footer = () => {
           </li>
         </ul>
         <small>
-          © 2023 - <span className="text-orange-500">Err.</span>
+          © {new Date().getFullYear()} - <a href="http://github.com/Oussa-Err"><span className="text-orange-500">Err.</span></a>
         </small>
       </footer>
     </div>
