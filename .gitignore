@@ -1,6 +1,4 @@
 node_modules
 .next
 .env
-public
-assets
 .env.*
