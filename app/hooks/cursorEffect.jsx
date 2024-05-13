@@ -50,10 +50,8 @@ export const CursorEffect = () => {
 
   return (
     <>
-      <div
-        className={`outer-cursor z-50 hidden md:block shadow-lg shadow-white`}
-      ></div>
-      <div className={`inner-cursor z-50 hidden md:block `}></div>
+      <div className="outer-cursor z-50 hidden md:block shadow-lg shadow-white"></div>
+      <div className="inner-cursor z-50 hidden md:block"></div>
     </>
   );
 };

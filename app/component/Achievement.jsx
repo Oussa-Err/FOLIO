@@ -10,9 +10,7 @@ import certificates from "../../Data/certificates.json";
 export default function Achievement() {
   return (
     <section className="pt-20" id="achievements">
-      <h1
-        className={`mb-10 text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold after:content-[''] after:w-4/5 after:h-4 sm:after:h-6 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10`}
-      >
+      <h1 className="mb-10 text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold after:content-[''] after:w-4/5 after:h-4 sm:after:h-6 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10">
         Achievements
       </h1>
       <Swiper

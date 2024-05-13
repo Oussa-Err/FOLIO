@@ -12,21 +12,19 @@ export default function About() {
     >
       <div className="flex flex-col">
         <h1
-          className={
+          className={`text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold after:content-[''] after:w-1/4 after:h-4 sm:after:h-6 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10 ${
             myElementVisible
-              ? `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold animate-fade-slide-down after:content-[''] after:w-1/4 after:h-4 sm:after:h-6 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10 after:animate-blue-block-slide`
-              : `text-[2rem] inline-block relative pb-8 sm:text-[4rem] lg:text-[4rem] font-bold after:content-[''] after:w-1/4 after:h-4 sm:after:h-6 after:bg-sky-800 after:absolute after:left-0 after:top-1/3 sm:after:top-1/2 after:z-[-1] z-10`
-          }
+              ? "after:animate-blue-block-slide animate-fade-slide-down"
+              : ""
+          }`}
         >
           Know Who I'M
         </h1>
         <div
           ref={observerRef}
-          className={
-            myElementVisible
-              ? `flex flex-col gap-4 lg:max-w-6xl sm:gap-8 animate-fade-out`
-              : `flex flex-col gap-4 lg:max-w-5xl sm:gap-8 `
-          }
+          className={`flex flex-col gap-4 lg:max-w-6xl sm:gap-8 ${
+            myElementVisible ? "animate-fade-out" : ""
+          }`}
         >
           <p className="md:text-xl animate-fade-out">
             My name is Oussama, I’m from Morocco and I’m{" "}

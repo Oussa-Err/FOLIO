@@ -40,42 +40,17 @@ export default function Portfolio() {
           } bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
         >
           <ul className="py-1 text-sm text-gray-700">
-            <li>
-              <a
-                href="#portfolio"
-                onClick={() => [setFilter(false), setType("")]}
-                className="block px-4 py-2 hover:bg-[#fb923c]"
-              >
-                ALL
-              </a>
-            </li>
-            <li>
-              <a
-                href="#portfolio"
-                onClick={() => [setFilter(false), setType("fullstack")]}
-                className="block px-4 py-2 hover:bg-[#fb923c]"
-              >
-                Full Stack
-              </a>
-            </li>
-            <li>
-              <a
-                href="#portfolio"
-                onClick={() => [setFilter(false), setType("frontend")]}
-                className="block px-4 py-2 hover:bg-[#fb923c]"
-              >
-                Frontend
-              </a>
-            </li>
-            <li>
-              <a
-                href="#portfolio"
-                onClick={() => [setFilter(false), setType("jamstack")]}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#fb923c]"
-              >
-                JAM stack
-              </a>
-            </li>
+            {stacks.map((el, index) => (
+              <li key={index}>
+                <a
+                  href="#portfolio"
+                  onClick={() => [setFilter(false), setType(el.label)]}
+                  className="block px-4 py-2 hover:bg-[#fb923c]"
+                >
+                  {el.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -120,6 +95,25 @@ export default function Portfolio() {
     </section>
   );
 }
+
+const stacks = [
+  {
+    name: "All",
+    label: "",
+  },
+  {
+    name: "Full stack",
+    label: "fullstack",
+  },
+  {
+    name: "Frontend",
+    label: "frontend",
+  },
+  {
+    name: "JAM stack",
+    label: "jamstack",
+  },
+];
 
 const DownArrow = () => (
   <svg
