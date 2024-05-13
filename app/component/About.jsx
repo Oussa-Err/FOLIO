@@ -1,7 +1,7 @@
 "use client";
 import AnimatedSections from "../hooks/AnimatedSections";
 
-export const About = () => {
+export default function About() {
   const { observerRef, myElementVisible } = AnimatedSections();
 
   return (
@@ -74,4 +74,4 @@ export const About = () => {
       </div>
     </section>
   );
-};
+}

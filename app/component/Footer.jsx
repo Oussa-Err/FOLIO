@@ -14,7 +14,10 @@ export const Footer = () => {
           </li>
         </ul>
         <small>
-          © {new Date().getFullYear()} - <a href="http://github.com/Oussa-Err"><span className="text-orange-500">Err.</span></a>
+          © {new Date().getFullYear()} -{" "}
+          <a href="http://github.com/Oussa-Err">
+            <span className="text-orange-500">Err.</span>
+          </a>
         </small>
       </footer>
     </div>

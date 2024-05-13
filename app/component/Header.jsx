@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
 
-export const Header = () => {
+export default function Header() {
   const [toggleMenu, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);
 
@@ -30,10 +30,7 @@ export const Header = () => {
           </Link>
           <ul className="hidden text-xl md:flex items-center gap-8">
             <li className="animate-navLinks">
-              <a
-                href="/#about"
-                className=" hover:pb-4"
-              >
+              <a href="/#about" className=" hover:pb-4">
                 About
               </a>
             </li>
@@ -143,4 +140,4 @@ export const Header = () => {
       </header>
     </div>
   );
-};
+}

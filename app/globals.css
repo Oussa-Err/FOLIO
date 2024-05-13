@@ -184,7 +184,7 @@ body {
 
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: #fff !important;
 }
 
@@ -201,6 +201,7 @@ body {
     height: 300px !important;
   }
 }
+
 .swiper-slide img {
   display: block;
   width: 100%;

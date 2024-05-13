@@ -1,14 +1,16 @@
 "use client";
-import { About } from "./component/About";
-import Achievement from "./component/Achievement";
-import { Contact } from "./component/Contact";
-import Github from "./component/GithubCal";
-import { Header } from "./component/Header";
-import { Hero } from "./component/Hero";
-import { Portfolio } from "./component/Portfolio";
-import { ScrollTop } from "./hooks/ScrollTop";
-import Loading from "./Loading";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+
+const About = dynamic(() => import("./component/About"))
+const Achievement = dynamic(() => import("./component/Achievement"))
+const Contact = dynamic(() => import("./component/Contact"))
+const Github = dynamic(() => import("./component/GithubCal"))
+const Header = dynamic(() => import("./component/Header"))
+const Hero = dynamic(() => import("./component/Hero"))
+const Portfolio = dynamic(() => import("./component/Portfolio"))
+const ScrollTop = dynamic(() => import("./hooks/ScrollTop"))
+const Loading = dynamic(() => import("./Loading"))
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

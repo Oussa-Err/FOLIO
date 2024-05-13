@@ -25,13 +25,13 @@ export const CursorEffect = () => {
 
     paragraphs.forEach((paragraph) => {
       paragraph.addEventListener("mouseover", () => {
-        innerCursor.classList.add("scale-125")
-      })
+        innerCursor.classList.add("scale-125");
+      });
 
       paragraph.addEventListener("mouseleave", () => {
-        innerCursor.classList.remove("scale-125")
-      })
-    })
+        innerCursor.classList.remove("scale-125");
+      });
+    });
 
     links.forEach((link) => {
       link.addEventListener("mouseover", () => {
@@ -44,13 +44,15 @@ export const CursorEffect = () => {
     });
 
     return () => {
-      document.removeEventListener("mousemove", moveCursor);      
+      document.removeEventListener("mousemove", moveCursor);
     };
   }, []);
 
   return (
     <>
-      <div className={`outer-cursor z-50 hidden md:block shadow-lg shadow-white`}></div>
+      <div
+        className={`outer-cursor z-50 hidden md:block shadow-lg shadow-white`}
+      ></div>
       <div className={`inner-cursor z-50 hidden md:block `}></div>
     </>
   );

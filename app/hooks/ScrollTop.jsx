@@ -10,9 +10,8 @@ const scrollToTop = () => {
   });
 };
 
-export const ScrollTop = () => {
+export default function ScrollTop() {
   const [isTop, setIsTop] = useState(false);
-
 
   useEffect(() => {
     const handler = () => {
@@ -22,7 +21,6 @@ export const ScrollTop = () => {
     window.addEventListener("scroll", handler);
     return () => window.removeEventListener("scroll", handler);
   }, []);
-
 
   return (
     <div>
@@ -37,4 +35,4 @@ export const ScrollTop = () => {
       )}
     </div>
   );
-};
+}

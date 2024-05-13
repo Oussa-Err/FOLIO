@@ -4,7 +4,7 @@ import projects from "../../Data/projects";
 import AnimatedSections from "../hooks/AnimatedSections";
 import { useState } from "react";
 
-export const Portfolio = () => {
+export default function Portfolio() {
   const { observerRef, myElementVisible } = AnimatedSections();
   const [type, setType] = useState("");
   const [filter, setFilter] = useState(false);
@@ -44,7 +44,7 @@ export const Portfolio = () => {
               <a
                 href="#portfolio"
                 onClick={() => [setFilter(false), setType("")]}
-                className="block px-4 py-2 hover:bg-[#F7BE38]"
+                className="block px-4 py-2 hover:bg-[#fb923c]"
               >
                 ALL
               </a>
@@ -53,7 +53,7 @@ export const Portfolio = () => {
               <a
                 href="#portfolio"
                 onClick={() => [setFilter(false), setType("fullstack")]}
-                className="block px-4 py-2 hover:bg-[#F7BE38]"
+                className="block px-4 py-2 hover:bg-[#fb923c]"
               >
                 Full Stack
               </a>
@@ -62,7 +62,7 @@ export const Portfolio = () => {
               <a
                 href="#portfolio"
                 onClick={() => [setFilter(false), setType("frontend")]}
-                className="block px-4 py-2 hover:bg-[#F7BE38]"
+                className="block px-4 py-2 hover:bg-[#fb923c]"
               >
                 Frontend
               </a>
@@ -71,7 +71,7 @@ export const Portfolio = () => {
               <a
                 href="#portfolio"
                 onClick={() => [setFilter(false), setType("jamstack")]}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#F7BE38]"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#fb923c]"
               >
                 JAM stack
               </a>
@@ -119,7 +119,7 @@ export const Portfolio = () => {
       </div>
     </section>
   );
-};
+}
 
 const DownArrow = () => (
   <svg

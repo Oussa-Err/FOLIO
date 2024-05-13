@@ -3,7 +3,7 @@ import Image from "next/image";
 import AnimatedSections from "../hooks/AnimatedSections";
 import Type from "../hooks/TypeWriter";
 
-export const Hero = () => {
+export default function Hero() {
   const { observerRef, myElementVisible } = AnimatedSections();
 
   return (
@@ -54,14 +54,11 @@ export const Hero = () => {
               : `py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent hover:text-white focus:outline-none border-[1.5px] border-white hover:border-blue-400 hover:border-[1px] transition-all ease-in-out text-lg text-sky-100 inline-block`
           }
         >
-          <a
-            href="/assets/curriculum-vitae-en-version.pdf"
-            target="_blank"
-          >
+          <a href="/assets/curriculum-vitae-en-version.pdf" target="_blank">
             Resume
           </a>
         </div>
       </div>
     </section>
   );
-};
+}
