@@ -1,6 +1,7 @@
+"use client"
 export default function Loading() {
   return (
-    <div className="flex justify-center ">
+    <div className="h-[calc(100vh-200px)] flex justify-center items-center">
       <div className="bg-slate-700 h-[7rem] w-72 rounded-lg flex flex-col items-center justify-center">
         <div className="lds-ring">
           <div></div>

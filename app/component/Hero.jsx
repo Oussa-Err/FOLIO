@@ -22,7 +22,7 @@ export default function Hero() {
           <Image
             src={"/assets/hands.svg"}
             alt="hands"
-            className="animate-shakeHands -z-10"
+            className="animate-shakeHands"
             width={32}
             height={32}
           />
@@ -58,3 +58,18 @@ export default function Hero() {
     </section>
   );
 }
+
+
+console.log(`
+
+_______  _______  _______    
+(  ____ \(  ____ )(  ____ )   
+| (    \/| (    )|| (    )|   
+| (__    | (____)|| (____)|   
+|  __)   |     __)|     __)   
+| (      | (\ (   | (\ (      
+| (____/\| ) \ \__| ) \ \__ _ 
+(_______/|/   \__/|/   \__/(_)
+                             
+
+`)
