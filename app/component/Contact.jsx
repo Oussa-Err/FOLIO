@@ -22,7 +22,7 @@ export default function Contact() {
       <p
         ref={observerRef}
         className={`text-xl lg:w-2/5 text-center ${
-          myElementVisible ? "animate-fade-out" : ""
+          myElementVisible && "animate-fade-out"
         }`}
       >
         If you want to carry out a project or chat with me, do not hesitate to

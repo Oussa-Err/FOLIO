@@ -1,6 +1,5 @@
-export const Footer = () => {
+export default function Footer() {
   return (
-    <div>
       <footer className="flex flex-col justify-center items-center pb-1">
         <ul className="flex gap-4 pb-2">
           <li>
@@ -20,6 +19,5 @@ export const Footer = () => {
           </a>
         </small>
       </footer>
-    </div>
   );
 };

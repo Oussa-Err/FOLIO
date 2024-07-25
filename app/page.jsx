@@ -10,6 +10,25 @@ const Hero = dynamic(() => import("./component/Hero"));
 const Portfolio = dynamic(() => import("./component/Portfolio"));
 const ScrollTop = dynamic(() => import("./hooks/ScrollTop"));
 const Loading = dynamic(() => import("./loading"));
+const Footer = dynamic(() => import("./component/Footer"));
+
+export default function Home() {
+  return (
+    <main className="px-8 md:px-24 sm:pt-24">
+      <Suspense fallback={<Loading />}>
+        <Header />
+        <ScrollTop />
+        <Hero />
+        <About />
+        <Portfolio />
+        <Achievement />
+        <Github />
+        <Contact />
+        <Footer />
+      </Suspense>
+    </main>
+  );
+}
 
 console.log(`
 
@@ -24,20 +43,3 @@ console.log(`
                               
 
 `);
-
-export default function Home() {
-  return (
-    <main className="px-8 md:px-24">
-      <Suspense fallback={<Loading />}>
-        <Header />
-        <ScrollTop />
-        <Hero />
-        <About />
-        <Portfolio />
-        <Achievement />
-        <Github />
-        <Contact />
-      </Suspense>
-    </main>
-  );
-}

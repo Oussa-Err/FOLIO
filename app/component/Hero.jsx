@@ -15,7 +15,7 @@ export default function Hero() {
         <div
           ref={observerRef}
           className={`flex gap-2 ${
-            myElementVisible ? "animate-fade-out-toggleMenu" : ""
+            myElementVisible && "animate-fade-out-toggleMenu"
           }`}
         >
           <h4 className="text-[2rem] md:text-[2.2rem]">Hello!</h4>
@@ -35,11 +35,9 @@ export default function Hero() {
         </h1>
         <h4
           ref={observerRef}
-          className={`text-xl py-8 ${
-            myElementVisible ? `animate-fade-out` : ``
-          }`}
+          className={`text-xl py-8 ${myElementVisible && `animate-fade-out`}`}
         >
-          Fullstack developer&nbsp;
+          Software developer&nbsp;
           <em className="line-through">and designer</em>
           &nbsp;based in Morocco. <br />I always try to write clean code and I
           value performance.
@@ -47,7 +45,7 @@ export default function Hero() {
         <div
           ref={observerRef}
           className={`py-[12px] px-[40px] md:mt-8 rounded-md bg-transparent hover:text-white focus:outline-none border-[1.5px] border-white hover:border-blue-400 hover:border-[1px] transition-all ease-in-out text-lg text-sky-100 inline-block ${
-            myElementVisible ? "animate-fade-out" : ""
+            myElementVisible && "animate-fade-out"
           }`}
         >
           <a href="/assets/curriculum-vitae-en-version.pdf" target="_blank">
@@ -58,7 +56,6 @@ export default function Hero() {
     </section>
   );
 }
-
 
 console.log(`
 
@@ -72,4 +69,4 @@ _______  _______  _______
 (_______/|/   \__/|/   \__/(_)
                              
 
-`)
+`);
