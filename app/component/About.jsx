@@ -27,7 +27,7 @@ export default function About() {
           }`}
         >
           <p className="md:text-xl animate-fade-out">
-            My name is Oussama, I’m from Morocco and I’m
+            My name is Oussama, I’m from Morocco and I’m&nbsp;
             {new Date().getFullYear() - 2001} years old.
           </p>
           <p className="md:text-lg animate-fade-out">
