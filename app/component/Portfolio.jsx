@@ -70,13 +70,21 @@ export default function Portfolio() {
                   {el.description}
                 </p>
                 <div className="w-full flex justify-between">
-                  <a
-                    href={el.live_url}
-                    target="_blank"
-                    className="text-lg font-semibold hover:underline"
-                  >
-                    Visit <span className="text-xl font-extrabold">&rarr;</span>
-                  </a>
+                  {el && el.live_url.length > 1 ? (
+                    <a
+                      href={el.live_url}
+                      target="_blank"
+                      className="text-lg font-semibold hover:underline"
+                    >
+                      Visit
+                      <span className="text-xl font-extrabold">&rarr;</span>
+                    </a>
+                  ) : (
+                    <p className="text-lg font-semibold hover:underline" title="no live url for this project">
+                      Visit
+                      <span className="text-xl font-extrabold">&rarr;</span>
+                    </p>
+                  )}
                   <a
                     href={el.source_url}
                     target="_blank"
@@ -112,6 +120,10 @@ const stacks = [
   {
     name: "JAM stack",
     label: "jamstack",
+  },
+  {
+    name: "Desktop",
+    label: "desktop",
   },
 ];
 

@@ -19,7 +19,7 @@
     },
     {
         "title": "TSF foundation",
-        "description": "🔭 Crafting a full stack web application focused on TSF Foundation's mission. Utilizing Next.js and Express.js to build a dynamic platform that seamlessly connects purpose and technology.",
+        "description": "🔭 Crafting a full stack web application focused on TSF Foundation's mission. Utilizing Next.js to build a dynamic platform that seamlessly connects purpose and technology.",
         "live_url": "https://tsf-foundation.vercel.app",
         "source_url": "https://github.com/Oussa-Err/TSF-FOUNDATION",
         "image": "/assets/tsf-project-screenshot_result.webp",
@@ -27,8 +27,17 @@
         "type": "fullstack"
     },
     {
+        "title": "IIYADA",
+        "description": "iiyada is a Desktop clinic management system developed using Visual Studio 2022. The primary language used is C#, and ADO.NET is utilized for MSSQL database manipulation. The design is enhanced using the Guna framework.",
+        "live_url": "",
+        "source_url": "https://github.com/Oussa-Err/IYADA/",
+        "image": "/assets/IIYADA-screenshot.png",
+        "alt": "dev project",
+        "type": "desktop"
+    },
+    {
         "title": "Healthy Farm",
-        "description": "Introducing a comprehensive e-commerce platform devoted  to organic living. Responsive interface that smoothly adapts to various screen sizes. This project was powered by VITE for optimized performance and development efficiency.",
+        "description": "Introducing a comprehensive e-commerce platform devoted to organic living. Responsive interface that smoothly adapts to various screen sizes. This project was powered by VITE for optimized performance and development efficiency.",
         "live_url": "https://healthyfarm.netlify.app",
         "source_url": "https://github.com/Oussa-Err/solid-spork",
         "image": "/assets/healthyfarmProject_result.webp",
