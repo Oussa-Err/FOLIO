@@ -21,7 +21,7 @@
         "title": "TSF foundation",
         "description": "🔭 Crafting a full stack web application focused on TSF Foundation's mission. Utilizing Next.js to build a dynamic platform that seamlessly connects purpose and technology.",
         "live_url": "https://tsf-foundation.vercel.app",
-        "source_url": "https://github.com/Oussa-Err/TSF-FOUNDATION",
+        "source_url": "https://github.com/Oussa-Err/TSF",
         "image": "/assets/tsf-project-screenshot_result.webp",
         "alt": "dev product",
         "type": "fullstack"
