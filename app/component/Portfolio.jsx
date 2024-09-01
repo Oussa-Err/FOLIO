@@ -95,7 +95,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="flex-1">
-                <Image src={el.image} alt={el.alt} width={700} height={300} />
+                <Image src={el.image} alt={el.alt} loading="lazy" width={700} height={300} />
               </div>
             </div>
           ))}

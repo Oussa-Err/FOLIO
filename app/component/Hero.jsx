@@ -22,6 +22,7 @@ export default function Hero() {
           <Image
             src={"/assets/hands.svg"}
             alt="hands"
+            loading="eager"
             className="animate-shakeHands"
             width={32}
             height={32}

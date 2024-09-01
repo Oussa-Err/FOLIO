@@ -35,6 +35,7 @@ export default function Achievement() {
               src={el.image}
               alt={el.alt}
               quality={100}
+              loading="lazy"
               width={1754}
               height={1238}
             />
