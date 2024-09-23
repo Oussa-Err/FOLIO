@@ -31,12 +31,12 @@ export const metadata = {
     siteName: "oussama's portfolio",
     images: [
       {
-        url: "http://localhost:3000/portfolio-screenShot.png",
+        url: "https://oussamaerr.vercel.app/portfolio-screenShot.png",
         width: 800,
         height: 600,
       },
       {
-        url: "http://localhost:3000/portfolio-screenShot.png",
+        url: "https://oussamaerr.vercel.app/portfolio-screenShot.png",
         width: 1800,
         height: 1600,
         alt: "ssama",
