@@ -5,7 +5,7 @@
 
 </div>
 
-![Home Screenshot](./portfolio-screenShot.png)
+![Home Screenshot](public/portfolio-screenShot.png)
 ## TL;DR
 
 You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to this github repo. Thanks!
