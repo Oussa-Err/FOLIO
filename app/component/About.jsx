@@ -22,7 +22,7 @@ export default function About() {
         </h1>
         <div
           ref={observerRef}
-          className={`flex flex-col gap-4 lg:max-w-6xl sm:gap-8 ${
+          className={`flex flex-col gap-4 lg:max-w-6xl sm:gap-8 text-slate-200 ${
             myElementVisible && "animate-fade-out"
           }`}
         >
@@ -31,25 +31,31 @@ export default function About() {
             {new Date().getFullYear() - 2001} years old.
           </p>
           <p className="md:text-lg animate-fade-out">
-            I describe myself as a passionate developer with a love for coding,
-            open source, and creating both web and desktop applications.
+            I’ve been in love with technology since I first used a computer at
+            age 5. Starting as a Front-end Developer in 2023, I’ve dedicated
+            around 10 hours a day to studying and refining my skills.
           </p>
           <p className="md:text-lg animate-fade-out">
-            Apart from my professional work, I enjoy creating and contributing
-            to various projects. This allows me to learn a lot of new things,
-            grow as a developer, and support different initiatives.
+            I enjoy working on <strong>web</strong>, <strong>mobile</strong> and
+            &nbsp;<strong>desktop</strong>&nbsp;applications, contributing to
+            &nbsp;<strong>open source projects</strong>, and&nbsp;
+            <strong>helping newcomers</strong>&nbsp;in the field.
           </p>
           <p className="md:text-lg animate-fade-out">
-            My passion for technology was born when I was 5 years old, when I
-            first used a computer.
+            I specialize in technologies like <strong>PHP</strong>
+            &nbsp;with&nbsp;<strong>Laravel</strong>,&nbsp;
+            <strong>Node.js</strong>
+            &nbsp;with&nbsp;<strong>Express.js</strong>, and front-end
+            frameworks like&nbsp;<strong>React.js</strong>&nbsp;and&nbsp;
+            <strong>Next.js</strong>, along with databases such as &nbsp;
+            <strong>MySQL</strong>,&nbsp;<strong>SQL Server</strong>, and &nbsp;
+            <strong>MongoDB</strong>. Additionally, I have experience in &nbsp;
+            <strong>Python</strong>&nbsp;and&nbsp;<strong>C#</strong>
+            &nbsp;development.
           </p>
           <p className="md:text-lg animate-fade-out">
-            I started as a Front-end Developer on 3/01/2023. Since then I have
-            been dedicating about 10 hours a day to studies.
-          </p>
-          <p className="md:text-lg animate-fade-out">
-            Codes, series, video games, music, podcast and studies are subjects
-            that interest me.
+            Codes, series, video games, music, skateboarding and studies are
+            subjects that interest me.
           </p>
           <p className="md:text-lg animate-fade-out">
             I see that I am on the right path because I love helping people who
@@ -60,13 +66,6 @@ export default function About() {
             In my spare time I usually read about reactive, asynchronous and
             object-oriented programming. I like to read Robert C. Martin's book
             series.
-          </p>
-          <p className="md:text-lg animate-fade-out">
-            I am actively exploring new avenues within the tech industry and am
-            eagerly open to fresh opportunities. I specialize in crafting
-            dynamic web experiences using an array of cutting-edge technologies,
-            including Node.js, C#, Python, and modern JavaScript libraries and
-            frameworks like React.js and Next.js.
           </p>
         </div>
       </div>
