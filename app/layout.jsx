@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
-
+import { Analytics } from "@vercel/analytics/react";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -10,7 +10,9 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth", scrollPadding: "5rem" }}>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children} <Analytics />
+      </body>
     </html>
   );
 }
