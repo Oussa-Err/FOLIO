@@ -18,7 +18,7 @@ export default function About() {
               "after:animate-blue-block-slide animate-fade-slide-down"
             }`}
         >
-          Know Who I'M
+          Know Who 1'M
         </h1>
         <div
           ref={observerRef}
