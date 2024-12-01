@@ -32,13 +32,13 @@ export default function About() {
           </p>
           <p className="md:text-lg animate-fade-out">
             I’ve been in love with technology since I first used a computer at
-            age 5. Starting as a Front-end Developer in 2023, I’ve dedicated
-            around 10 hours a day to studying and refining my skills.
+            age 5. Starting as a Front-end Developer in 2022, since then I’ve
+            dedicated around 10 hours a day to studying and refining my skills.
           </p>
           <p className="md:text-lg animate-fade-out">
-            I enjoy working on <strong>web</strong>, <strong>mobile</strong> and
-            &nbsp;<strong>desktop</strong>&nbsp;applications, contributing to
-            &nbsp;<strong>open source projects</strong>, and&nbsp;
+            I enjoy working on <strong>web</strong>, <strong>mobile</strong>{" "}
+            and&nbsp;<strong>desktop</strong>&nbsp;applications, contributing
+            to&nbsp;<strong>open source projects</strong>, and&nbsp;
             <strong>helping newcomers</strong>&nbsp;in the field.
           </p>
           <p className="md:text-lg animate-fade-out">
@@ -47,9 +47,9 @@ export default function About() {
             <strong>Node.js</strong>
             &nbsp;with&nbsp;<strong>Express.js</strong>, and front-end
             frameworks like&nbsp;<strong>React.js</strong>&nbsp;and&nbsp;
-            <strong>Next.js</strong>, along with databases such as &nbsp;
-            <strong>MySQL</strong>,&nbsp;<strong>SQL Server</strong>, and &nbsp;
-            <strong>MongoDB</strong>. Additionally, I have experience in &nbsp;
+            <strong>Next.js</strong>, along with databases such as&nbsp;
+            <strong>MySQL</strong>,&nbsp;<strong>SQL Server</strong> and&nbsp;
+            <strong>MongoDB</strong>. Additionally, I have experience in&nbsp;
             <strong>Python</strong>&nbsp;and&nbsp;<strong>C#</strong>
             &nbsp;development.
           </p>

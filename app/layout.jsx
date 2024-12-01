@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { Poppins } from "next/font/google";
+import { Anonymous_Pro } from "next/font/google";
 
-const poppins = Poppins({
+const anonymous_Pro = Anonymous_Pro({
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal"],
@@ -11,7 +11,7 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth", scrollPadding: "5rem" }}>
-      <body className={poppins.className}>
+      <body className={anonymous_Pro.className}>
         {children}
         <Analytics />
       </body>

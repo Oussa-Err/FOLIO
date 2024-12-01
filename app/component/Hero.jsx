@@ -29,7 +29,7 @@ export default function Hero() {
           />
         </div>
         <h1 className="text-[2rem] md:text-[3rem] lg:text-[4.8rem] font-bold">
-          I 4m Øussama <span className="text-orange-400">Err</span>aoui.
+          I 4m Øussama <span className="text-orange-400">Err</span>aoui
         </h1>
         <h1 className="text-[1.2rem] md:text-[2.3rem] font-bold">
           <Type />
