@@ -2,16 +2,17 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Anonymous_Pro } from "next/font/google";
 
-const anonymous_Pro = Anonymous_Pro({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  style: ["normal"],
-});
+// const anonymous_Pro = Anonymous_Pro({
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+//   style: ["normal"],
+// });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth", scrollPadding: "5rem" }}>
-      <body className={anonymous_Pro.className}>
+      {/* <body className={anonymous_Pro.className}> */}
+      <body>
         {children}
         <Analytics />
       </body>
@@ -22,8 +23,8 @@ export default function RootLayout({ children }) {
 export const metadata = {
   metadataBase: new URL("https://oussamaerr.vercel.app/"),
   title: {
-    default: "Ouss",
-    template: "%s | Ouss",
+    default: "OER",
+    template: "%s | OER",
   },
   description: "Fullstack developer and designer based in Morocco.",
   openGraph: {
