@@ -49,7 +49,7 @@ export default function Hero() {
             myElementVisible && "animate-fade-out"
           }`}
         >
-          <a href="/assets/Oussama-Erraoui-resume.pdf" target="_blank">
+          <a href="" target="_blank">
             Resume
           </a>
         </div>
